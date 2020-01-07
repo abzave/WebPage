@@ -1,0 +1,128 @@
+header{
+	background-color: #59B0BD;
+	display: flex;
+	justify-content: space-between;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
+}
+
+.menu{
+	padding-top: 1em;
+	padding-right: 1em;
+	display: flex;
+	margin-right: 5px;
+	margin-top: 8px;
+}
+
+#pageLink{
+	font-size: 300%;
+	text-decoration: none !important;
+	padding-left: 0.3em;
+	color: inherit;
+	text-shadow: 2px 2px 1px #FFFFFF;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+#home{
+	background-color: inherit;
+	border: none;
+	color: #F9F871;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none !important;
+	padding-top: 0.2em;
+	margin-right: 0.4em;
+}
+
+#home:hover{
+	color: #73DFA9;
+	cursor: pointer;
+}
+
+.menuButton{
+	background-color: inherit;
+	border: none;
+	color: #F9F871;
+	padding-bottom: 1.4em;
+}
+
+.menuButton:hover{
+	color: #73DFA9;
+	cursor: pointer;
+}
+
+.menuButton:focus{
+	outline: 0;
+}
+
+.dropdown{
+	width: 2em;
+	margin-left: 0.4em;
+}
+
+.selectBox{
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	position: absolute;
+}
+
+.selectBox .optionBox{
+	background-color: #59B0BD;
+	color: #F9F871;
+	border: 1px solid #6F97AB;
+	border-bottom: 0px;
+	border-radius: 2px;
+	transition: all 0.4s;
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+	order: 1;
+}
+
+.selectBox .optionBox.active{
+	max-height: 240px;
+	opacity: 1;
+}
+
+.selectBox .optionBox.active + .selected::after{
+	content: "\2BC5";
+}
+
+.selectBox .option{
+	border-bottom: 1px solid #6F97AB;
+}
+
+.selectBox .option, .selected{
+	cursor: pointer;
+}
+
+.selectBox .option:hover{
+	color: #73DFA9;
+}
+
+.selectBox .option .radio{
+	display: none;
+}
+
+
+.selectBox label{
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.selected{
+	color: #F9F871;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.selected::after{
+	content: "\2BC6";
+}
+
+.selected:hover{
+	color: #73DFA9;
+}
