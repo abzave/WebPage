@@ -74,16 +74,10 @@ header{
 	border: 1px solid #6F97AB;
 	border-bottom: 0px;
 	border-radius: 2px;
-	transition: all 0.4s;
-	overflow: hidden;
-	max-height: 0;
 	opacity: 0;
-	order: 1;
-}
-
-.selectBox .optionBox.active{
+	overflow: hidden;
 	max-height: 240px;
-	opacity: 1;
+	order: 1;
 }
 
 .selectBox .optionBox.active + .selected::after{
