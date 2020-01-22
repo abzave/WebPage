@@ -3,10 +3,6 @@
 }
 
 .bannerImage{
-    background: url("D:/Pictures/Pic_20171107_203753_4096x2160.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 400px;
 }
 
