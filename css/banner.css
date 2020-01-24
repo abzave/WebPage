@@ -33,3 +33,17 @@
 #leftSlide{
     left: 0;
 }
+
+.imageInfo{
+    background-color: #AFEF8B7F;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.imageInfo h2, .imageInfo p{
+    color: #F9F871;
+    margin-left: 5rem;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 
+                 1px -1px 0 #000, -1px -1px 0 #000;
+}
