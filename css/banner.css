@@ -41,7 +41,7 @@
     width: 100%;
 }
 
-.imageInfo h2, .imageInfo p{
+.imageInfo h2 a, .imageInfo p{
     color: #F9F871;
     margin-left: 5rem;
     text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 

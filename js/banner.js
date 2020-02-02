@@ -22,7 +22,7 @@ function showImage(imageIndex) {
     $(".bannerImage").css({"display": "block", "background": "url(" + imagesUrls[imageIndex] + ")", 
                            "background-position": "center center", "background-size": "cover", 
                            "background-repeat": "no-repeat"});
-    $(".imageInfo h2").html(imageTitles[imageIndex]);
+    $(".imageInfo h2 a").html(imageTitles[imageIndex]);
     $(".imageInfo p").html(imageDescriptions[imageIndex]);
 
     return imageIndex;
