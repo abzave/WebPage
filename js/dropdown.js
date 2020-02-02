@@ -1,15 +1,12 @@
 $(document).ready(() => {
-    const selected = document.querySelector(".selected");
-    const options = document.querySelectorAll(".option");
+    $(".optionBox").hide().css("opacity", "1");
 
-    selected.addEventListener("click", () => {
-        $(".optionBox").toggleClass("active");
+    $(".selected").click(() => {
+        $(".optionBox").toggleClass("active").slideToggle(400);
     });
 
-    options.forEach(option => {
-        option.addEventListener("click", () => {
-            $(".selected").text(option.querySelector("label").innerHTML);
-            $(".optionBox").removeClass("active");
-        });
+    $(".option").click(function(){
+        $(".selected").text($(this).find("label").html());
+        $(".optionBox").removeClass("active").slideUp(400);
     });
 });

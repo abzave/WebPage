@@ -1,18 +1,25 @@
 .banner{
-    background:url("D:/Pictures/Pic_20171107_203753_4096x2160.png"); 
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
+}
+
+.bannerImage{
     min-height: 400px;
 }
 
 .slideButton{
+    display: inline-block;
+    position: absolute;
     opacity: 0.5;
     background-color: #AFEF8B;
     border: none;
-    margin-top: 170px;
     font-size: 52px;
     color: #59B0BD;
+    outline: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    top: 32%;
 }
 
 .slideButton:focus{
@@ -20,5 +27,23 @@
 }
 
 #rightSlide{
-    float: right;
+    right: 0;
+}
+
+#leftSlide{
+    left: 0;
+}
+
+.imageInfo{
+    background-color: #AFEF8B7F;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.imageInfo h2 a, .imageInfo p{
+    color: #F9F871;
+    margin-left: 5rem;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 
+                 1px -1px 0 #000, -1px -1px 0 #000;
 }
