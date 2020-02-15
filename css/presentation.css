@@ -25,6 +25,9 @@
 
 .presentation .contents{
     background-color: #59B0BD;
+}
+
+.presentation .contents .information{
     display: flex;
     padding-left: 15%;
 }
@@ -33,4 +36,12 @@
     width: 20%;
     display: inline-block;
     padding: 0 5%;
+}
+
+.presentation .contents .learnMore{
+    padding-left: 50%;
+    font-size: 18px;
+    color: #F9F871;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 
+                 1px -1px 0 #000, -1px -1px 0 #000;
 }
