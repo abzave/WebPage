@@ -1,11 +1,4 @@
-.presentation .title{
-	font-size: 300%;
-    padding-left: 0.3em;
-    margin-bottom: 0;
-}
-
 .presentation .subtitle{
-	font-size: 150%;
     margin-top: 0;
 }
 
@@ -13,12 +6,12 @@
     text-align: center;
 }
 
-.presentation .title, .presentation .contents .content .contentTitle{
+.presentation .contents .content .contentTitle{
 	color: #F9F871;
 	text-shadow: 2px 2px 1px #000000;
 }
 
-.presentation .subtitle, .presentation .contents .content{
+.presentation .contents .content{
     color: #AFEF8B;
 	text-shadow: 2px 2px 1px #000000;
 }
