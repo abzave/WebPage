@@ -1,4 +1,23 @@
+.projects .projectsShowcase{
+    display: flex;
+    margin-top: 3em;
+}
+
 .projects .title{
     margin-left: 5%;
     padding: 0;
 }
+
+.projects .project{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    background-color: #59B0BD;  
+    overflow: hidden;
+}
+
+.projects .projectsShowcase .project img{
+    height: 300px;
+    vertical-align:middle;
+    position: relative;
+}
+

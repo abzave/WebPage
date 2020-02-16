@@ -6,16 +6,6 @@
     text-align: center;
 }
 
-.presentation .contents .content .contentTitle{
-	color: #F9F871;
-	text-shadow: 2px 2px 1px #000000;
-}
-
-.presentation .contents .content{
-    color: #AFEF8B;
-	text-shadow: 2px 2px 1px #000000;
-}
-
 .presentation .contents{
     background-color: #59B0BD;
 }
