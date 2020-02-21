@@ -8,12 +8,13 @@
     padding: 0;
 }
 
-.projects .project{
+.projects .projectsShowcase .project{
     margin-left: 2.5%;
     margin-right: 2.5%;
     padding-bottom: 0.5%;
     background-color: #59B0BD;  
     overflow: hidden;
+    cursor: pointer;
 }
 
 .projects .projectsShowcase .project img{
@@ -30,7 +31,15 @@
     margin-left: 45%;
 }
 
-.projects .projectsShowcase .project .moreProjects{
+.projects .projectsShowcase #moreProjectsContainer{
     width: 300px;
 }
+
+.projects .projectsShowcase .project #moreProjects{
+    display: flex;
+    margin-left: 0;
+    padding-left: 32%;
+    margin-top: 100%;
+}
+
 
