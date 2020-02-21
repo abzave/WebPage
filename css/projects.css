@@ -11,6 +11,7 @@
 .projects .project{
     margin-left: 2.5%;
     margin-right: 2.5%;
+    padding-bottom: 0.5%;
     background-color: #59B0BD;  
     overflow: hidden;
 }
@@ -19,5 +20,17 @@
     height: 300px;
     vertical-align:middle;
     position: relative;
+}
+
+.projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
+    margin-left: 1em;
+}
+
+.projects .projectsShowcase .project .link{
+    margin-left: 45%;
+}
+
+.projects .projectsShowcase .project .moreProjects{
+    width: 300px;
 }
 
