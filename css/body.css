@@ -2,3 +2,39 @@ body{
     background-color: #6F97AB;
     margin: 0;
 }
+
+.link{
+    color: #F9F871;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 
+                 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.title{
+	font-size: 300%;
+    padding-left: 0.3em;
+    margin-bottom: 0;
+}
+
+.title{
+	color: #F9F871;
+	text-shadow: 2px 2px 1px #000000;
+}
+
+.subtitle{
+	font-size: 150%;
+}
+
+.subtitle{
+    color: #AFEF8B;
+	text-shadow: 2px 2px 1px #000000;
+}
+
+.contentTitle{
+	color: #F9F871;
+	text-shadow: 2px 2px 1px #000000;
+}
+
+p{
+    color: #AFEF8B;
+	text-shadow: 2px 2px 1px #000000;
+}

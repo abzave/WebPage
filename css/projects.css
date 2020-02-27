@@ -1,0 +1,45 @@
+.projects .projectsShowcase{
+    display: flex;
+    margin-top: 3em;
+}
+
+.projects .title{
+    margin-left: 5%;
+    padding: 0;
+}
+
+.projects .projectsShowcase .project{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-bottom: 0.5%;
+    background-color: #59B0BD;  
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.projects .projectsShowcase .project img{
+    height: 300px;
+    vertical-align:middle;
+    position: relative;
+}
+
+.projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
+    margin-left: 1em;
+}
+
+.projects .projectsShowcase .project .link{
+    margin-left: 45%;
+}
+
+.projects .projectsShowcase #moreProjectsContainer{
+    width: 300px;
+}
+
+.projects .projectsShowcase .project #moreProjects{
+    display: flex;
+    margin-left: 0;
+    padding-left: 32%;
+    margin-top: 100%;
+}
+
+
