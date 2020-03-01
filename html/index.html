@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="../css/banner.css">
 		<link rel="stylesheet" href="../css/presentation.css">
 		<link rel="stylesheet" href="../css/projects.css">
+		<link rel="stylesheet" href="../css/contact.css">
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 		<script src="../js/dropdown.js"></script>
 		<script src="../js/banner.js"></script>
@@ -106,8 +107,9 @@
 				</div>
 			</div>
 		</div>
-		<form name="contact" method="POST">
-			<table>
+		<form class="contactForm" name="contact" method="POST">
+			<h2 class="title">Contacto</h2>
+			<table class="contact">
 				<tr>
 					<td>
 						<input type="text" placeholder="Nombre">
@@ -118,12 +120,17 @@
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input type="email" placeholder="Correo">
+						<input id="emailField" type="email" placeholder="Correo">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
 						<textarea placeholder="Mensaje"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Enviar" id="sendButton">
 					</td>
 				</tr>
 			</table>

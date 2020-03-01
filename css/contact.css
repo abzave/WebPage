@@ -1,0 +1,37 @@
+.contactForm .contact{
+    background-color: #59B0BD;
+    margin: 1% auto;
+    width: 50%;
+    padding: 0.5em;
+}
+
+.contactForm .title{
+    margin-left: 5%;
+}
+
+.contactForm .contact textarea, .contactForm .contact input{
+    width: 99%;
+}
+
+.contactForm .contact textarea, .contactForm .contact input{
+    resize: none;
+    background-color: #59B0BD;
+    color: #F9F871;
+    border-color: #51C9BC;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.contactForm .contact #sendButton{
+    margin-left: 45%;
+    width: 10%;
+}
+
+.contactForm .contact textarea:focus, .contactForm .contact input:focus{
+    outline: 0;
+}
+
+.contactForm .contact textarea::placeholder, .contactForm .contact input::placeholder{
+    color: #F9F871;
+}
