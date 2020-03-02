@@ -3,46 +3,22 @@
 	<head>
 		<title>abzave</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../css/header.css">
 		<link rel="stylesheet" href="../css/body.css">
+		<link rel="stylesheet" href="../css/header.css">
 		<link rel="stylesheet" href="../css/banner.css">
 		<link rel="stylesheet" href="../css/presentation.css">
 		<link rel="stylesheet" href="../css/projects.css">
 		<link rel="stylesheet" href="../css/contact.css">
 		<link rel="stylesheet" href="../css/footer.css">
 		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script src="../js/dropdown.js"></script>
+		<script src="../js/header.js"></script>
 		<script src="../js/banner.js"></script>
 		<script src="../js/projects.js"></script>
+		<script src="../js/footer.js"></script>
+		<script src="../js/functions.js"></script>
 	</head>
 	<body>
-		<header>
-			<a href="index.html" id="pageLink">abzave.com</a>
-			<div class="menu">
-				<a href="index.html" id="home">Inicio</a>
-				<button class="menuButton">Proyectos</button>
-				<button class="menuButton">Blog</button>
-				<button class="menuButton">Acerca de</button>
-				<button class="menuButton">Contacto</button>
-				<div class="dropdown">
-					<div class="selectBox">
-						<div class="optionBox">
-							<div class="option">
-								<input type="radio" id="ES" class="radio" name="language">
-								<label for="ES">ES</label>
-							</div>
-							<div class="option">
-								<input type="radio" id="EN" class="radio" name="language">
-								<label for="EN">EN</label>
-							</div>
-						</div>
-						<div class="selected">
-							ES
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		<header></header>
 		<div class="banner">
 			<div class="bannerImage"></div>
 			<button class="slideButton" id="leftSlide">&#706;</button>
@@ -89,22 +65,22 @@
 					<img src="D:/Pictures/Pic_20171107_203753_4096x2160.png">
 					<h3 class="contentTitle">Keylogger</h3>
 					<p>Registro de pulsaciones de teclado</p>
-					<a href="index.html" class="link">Más</a>
+					<a href="projects.html" class="link">Más</a>
 				</div>
 				<div class="project">
 					<img src="D:/Pictures/Pic_20170706_203225_4096x2160.png">
 					<h3 class="contentTitle">Registro de personas</h3>
 					<p>Restro de personas y parentescos</p>
-					<a href="index.html" class="link">Más</a>
+					<a href="projects.html" class="link">Más</a>
 				</div>
 				<div class="project">
 					<img src="D:/Pictures/148221.jpg">
 					<h3 class="contentTitle">Cifrador</h3>
 					<p>Cifrado de mensajes mediante diferentes métodos</p>
-					<a href="index.html" class="link">Más</a>
+					<a href="projects.html" class="link">Más</a>
 				</div>
 				<div class="project" id="moreProjectsContainer">
-					<a href="index.html" class="link" id="moreProjects">Más Projectos</a>
+					<a href="projects.html" class="link" id="moreProjects">Más Projectos</a>
 				</div>
 			</div>
 		</div>
@@ -136,8 +112,6 @@
 				</tr>
 			</table>
 		</form>
-		<footer>
-			<h4>&#169; 2020 Abraham Meza</h4>
-		</footer>
+		<footer></footer>
 	</body>
 </html>
