@@ -15,12 +15,12 @@
     background-color: #59B0BD;  
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 
 .projects .projectsShowcase .project img{
     height: 300px;
-    vertical-align:middle;
-    position: relative;
+    width: 570px;
 }
 
 .projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
