@@ -1,6 +1,7 @@
 .projects .projectsShowcase{
     display: flex;
     margin-top: 3em;
+    margin-bottom: 1.5em;
 }
 
 .projects .title{
