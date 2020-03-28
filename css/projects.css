@@ -1,3 +1,8 @@
+.projects{
+    table-layout: fixed ;
+    width: 100% ;
+}
+
 .projects .projectsShowcase{
     display: flex;
     margin-top: 3em;
@@ -17,6 +22,7 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    width: 25%
 }
 
 .projects .projectsShowcase .project img{
