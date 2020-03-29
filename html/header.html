@@ -1,0 +1,27 @@
+<script src="../js/dropdown.js"></script>
+
+<a href="index.html" id="pageLink">abzave.com</a>
+<div class="menu">
+    <a href="index.html" id="home">Inicio</a>
+    <button class="menuButton" onclick="goToPage('projects.html')">Proyectos</button>
+    <button class="menuButton">Blog</button>
+    <button class="menuButton">Acerca de</button>
+    <button class="menuButton">Contacto</button>
+    <div class="dropdown">
+        <div class="selectBox">
+            <div class="optionBox">
+                <div class="option">
+                    <input type="radio" id="ES" class="radio" name="language">
+                    <label for="ES">ES</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="EN" class="radio" name="language">
+                    <label for="EN">EN</label>
+                </div>
+            </div>
+            <div class="selected">
+                ES
+            </div>
+        </div>
+    </div>
+</div>

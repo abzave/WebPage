@@ -1,6 +1,12 @@
+.projects{
+    table-layout: fixed ;
+    width: 100% ;
+}
+
 .projects .projectsShowcase{
     display: flex;
     margin-top: 3em;
+    margin-bottom: 1.5em;
 }
 
 .projects .title{
@@ -15,12 +21,13 @@
     background-color: #59B0BD;  
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+    width: 25%
 }
 
 .projects .projectsShowcase .project img{
     height: 300px;
-    vertical-align:middle;
-    position: relative;
+    width: 570px;
 }
 
 .projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
