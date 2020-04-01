@@ -6,6 +6,10 @@ $(document).ready(() => {
         $(this).css("opacity", "1");
     });
     projects.click(function() {
-        window.location.href = $(this).find(".link").attr("href");
+        var link = $(this).find(".link").attr("href");
+        if(!link){
+            link = $(this).find("project-card").attr("href");
+        }
+        window.location.href = link;
     });
 });

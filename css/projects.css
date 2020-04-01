@@ -25,17 +25,17 @@
     width: 25%
 }
 
-.projects .projectsShowcase .project img{
+.projects .projectsShowcase img{
     height: 300px;
     width: 570px;
 }
 
-.projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
-    margin-left: 1em;
+.projects .projectsShowcase .contentTitle, .projects .projectsShowcase p{
+    margin-left: 1em; 
 }
 
-.projects .projectsShowcase .project .link{
-    margin-left: 45%;
+.projects .projectsShowcase .link{
+    margin-left: 45%
 }
 
 .projects .projectsShowcase #moreProjectsContainer{
