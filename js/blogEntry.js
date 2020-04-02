@@ -53,7 +53,7 @@ function createPosts(){
     $.each(entries, function(index, value){
         postsHtml += getPostHtml(value);
     });
-    $(".posts").prepend(postsHtml);
+    $(".searchBox").after(postsHtml);
 }
 
 $(document).ready(function(){
