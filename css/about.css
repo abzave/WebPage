@@ -30,3 +30,9 @@ b{
 a{
     text-decoration: none !important;
 }
+
+.information img{
+    width: 360px;
+    float: left;
+    padding: 2% 10px 0 2%;
+}
