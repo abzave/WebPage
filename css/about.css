@@ -1,0 +1,45 @@
+.center{
+    margin-left: 43%;
+}
+
+.leftSpacing{
+    margin-left: 2%;
+}
+
+.rightSpacing{
+    margin-right: 2%;
+}
+
+.topSpacing{
+    padding-top: 2%;
+}
+
+.bottomSpacing{
+    padding-bottom: 2%;
+}
+
+.information{
+    background-color: #59B0BD;
+    font-size: 20px;
+    min-height: 240px;
+}
+
+b{
+    color: #F9F871;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.information .leftImg{
+    width: 240px;
+    float: left;
+    padding: 2% 10px 0 2%;
+}
+
+.information .rightImg{
+    width: 240px;
+    float: right;
+    padding: 2% 2% 10px 2%;
+}
