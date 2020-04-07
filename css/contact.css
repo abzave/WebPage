@@ -35,3 +35,11 @@
 .contactForm .contact textarea::placeholder, .contactForm .contact input::placeholder{
     color: #F9F871;
 }
+
+#emailIcon{
+    font-size: 60px;
+}
+
+.email{
+    display: flex;
+}
