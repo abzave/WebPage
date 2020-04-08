@@ -1,27 +1,7 @@
-.leftSpacing{
-    margin-left: 2%;
-}
-
-.rightSpacing{
-    margin-right: 2%;
-}
-
-.topSpacing{
-    padding-top: 2%;
-}
-
-.bottomSpacing{
-    padding-bottom: 2%;
-}
-
 .information{
     background-color: #59B0BD;
     font-size: 20px;
     min-height: 240px;
-}
-
-b{
-    color: #F9F871;
 }
 
 a{
