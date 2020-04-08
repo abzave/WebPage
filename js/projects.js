@@ -1,5 +1,210 @@
-$(document).ready(() => {
-    var projects = $(".projects .projectsShowcase .project");
+var projects = {
+    "#personal": [
+        {
+            "title": "Keylogger",
+            "description": "Registro de pulsaciones de teclado.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Documentador",
+            "description": "Generación automatica de documentación en Python.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "PI",
+            "description": "Calculo de 1 a 10 dígitos de la constante pi usando series.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Conversor de divisas",
+            "description": "Conversión de colones a dolares y viceversa.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Generador UML Java",
+            "description": "Creación de diagrama de UML para código en Java.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Simulador de físicas",
+            "description": "Simulación de físcas de movimiento.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Finanzas",
+            "description": "Registro de ingresos y gastos.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Sitio Web",
+            "description": "Página web de contacto y portafolio.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        }
+    ],
+    "#colaborative": [
+        {
+            "title": "Rescue Hubble",
+            "description": "Juego móvil acerca de rescatar el Telescopio Espacial Hubble.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Escape Room",
+            "description": "Juego de realidad Virtual que consiste en resulver acertijos para poder escapar.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        }
+    ],
+    "#work": [
+        {
+            "title": "EULER",
+            "description": "Editor matemático que sirve como puente entre personas con discapacidad visual y personas con vista.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        }
+    ],
+    "#university": [
+        {
+            "title": "Cifrador",
+            "description": "Programa que cifra mensajes en uno de los 8 tipos de cifrado disponibles y luego lo envía por correo.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "PokePad",
+            "description": "Búsqueda de información de pokémones de primera generación con posibilidad de marcarlos como favoritos.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Registro de personas",
+            "description": "Sistema de registro de personas que lleva control de árbol genealógico y genera certificados de nacimiento.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Traductor de números a japonés",
+            "description": "Programa que recibe un número entre 0 y 9999 e imprime su nombre en japonés.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Supermercados",
+            "description": "Sistema de compras en diferentes supermercados con sistema de usuarios y facturación.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Registro de clientes",
+            "description": "Registro y búsqueda de clientes haciendo uso de listas enlanzadas y árboles búsqueda.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Simulador de CPU",
+            "description": "Simulación de un procesador ejecutando un programa de multiplicación por sumas.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Sistema de Transportes",
+            "description": "Aplicación que maneja los servicios de transporte prestados por una institución.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Base de Datos de Granja",
+            "description": "Base de Datos diseñada para una granja que produce huevos.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Base de Datos de Red de Cuido",
+            "description": "Base de Datos que maneja usuarios, facturas y calificaciones de usuarios.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Minijuegos",
+            "description": "Juego de mesa virtual que consta de 7 minijuegos.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Planificador de hormigas",
+            "description": "Programa que planifica la ruta de hormigas para maximar la recolección de hojas.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "BlackJack",
+            "description": "BlackJack virtual que permite juego en línea.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Sistema Gestor de Bases de Datos",
+            "description": "Sistema que permite crear y gestionar bases de datos.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Proteinas",
+            "description": "Programa que modela el comportamiento de proteinas.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Safisfacción booleana",
+            "description": "Programa usando un método heurístico determina si una función booleana presenta una combinación que resulte en 1.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Desencripción de AES",
+            "description": "Programa que de manera probabilistica determina los caracteres faltantes en una llave de AES..",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Base de Datos de Soporte al Cliente",
+            "description": "Base de datos que factura y lleva control del soporte técnico brindado a los clientes.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Generación de Imágenes",
+            "description": "Programa que genera una imagen dada a partir de algoritmos genéticos.",
+            "image": "D:/Pictures/Pic_20170706_203225_4096x2160.png",
+            "url": "projects.html"
+        },
+        {
+            "title": "Juego de Desencripción",
+            "description": "Juego que trata de descifrar el mensaje envíado por otro juagador.",
+            "image": "D:/Pictures/148221.jpg",
+            "url": "projects.html"
+        },
+        {
+            "title": "Evaluación de funciones en paralelo",
+            "description": "Programa que valua un arreglo de valores en una función de manera paralela.",
+            "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+            "url": "projects.html"
+        },
+    ]
+};
+
+const ROW_LENGHT = 4;
+
+function applyProjectsStyle(){
+    const projects = $(".projects .projectsShowcase .project");
     projects.hover(function(){
         $(this).css("opacity", "0.5");
     }, function(){
@@ -12,4 +217,49 @@ $(document).ready(() => {
         }
         window.location.href = link;
     });
+}
+
+function insertProjects(){
+    $.each(projects, function(key, value){
+        var projectCount = 0;
+        var showcase = createShowcase($(key).parent().parent());
+        $.each(value, function(index, value){
+            if(projectCount == ROW_LENGHT){
+                projectCount = 0;
+                showcase = createShowcase(showcase);
+            }
+            showcase.append(createProjectCard(value));
+            projectCount++;
+        });
+        verifyAligment(projectCount, showcase);
+    });
+}
+
+function verifyAligment(projectCount, showcase){
+    const remaining = projectCount % ROW_LENGHT;
+    if(remaining != 0){
+        const cardsNedeed = ROW_LENGHT - remaining;
+        for(var card = 0; card < cardsNedeed; card++){
+            showcase.append(createEmptyCard());
+        }
+    }
+}
+
+function createEmptyCard(){
+    return "<td class='emptyCard'></td>";
+}
+
+function createShowcase(base){
+    return base.after("<tr class='projectsShowcase'></tr>").next();
+}
+
+function createProjectCard(info){
+    return "<td class='project'>\n\t<project-card image='" + info["image"] + "' title='" + 
+            info["title"] + "' href='" + info["url"] + "'>" + info["description"] + 
+            "</project-card>\n</td>";
+}
+
+$(document).ready(() => {
+    insertProjects();
+    applyProjectsStyle();
 });
