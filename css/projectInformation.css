@@ -1,0 +1,13 @@
+.information{
+    font-size: 32px;
+}
+
+.content{
+    justify-content: space-between;
+}
+
+.content img{
+    width: 50%;
+    height: 28%;
+    float: right;
+}
