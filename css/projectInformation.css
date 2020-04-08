@@ -3,10 +3,11 @@
 }
 
 .content{
-    display: flex;
     justify-content: space-between;
 }
 
 .content img{
     width: 50%;
+    height: 28%;
+    float: right;
 }
