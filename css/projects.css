@@ -25,17 +25,17 @@
     width: 25%
 }
 
-.projects .projectsShowcase .project img{
+.projects .projectsShowcase img{
     height: 300px;
     width: 570px;
 }
 
-.projects .projectsShowcase .project .contentTitle, .projects .projectsShowcase .project p{
-    margin-left: 1em;
+.projects .projectsShowcase .contentTitle, .projects .projectsShowcase p{
+    margin-left: 1em; 
 }
 
-.projects .projectsShowcase .project .link{
-    margin-left: 45%;
+.projects .projectsShowcase .link{
+    margin-left: 45%
 }
 
 .projects .projectsShowcase #moreProjectsContainer{
@@ -47,6 +47,12 @@
     margin-left: 0;
     padding-left: 32%;
     margin-top: 100%;
+}
+
+.projects .projectsShowcase .emptyCard{
+    width: 25%; 
+    margin-right: 2.5%; 
+    margin-left: 2.5%;
 }
 
 

@@ -1,10 +1,17 @@
 class ProjectCard extends HTMLElement{
 
     connectedCallback(){
-        this.innerHTML = "<img src='" + this.image + "'>\n" + 
-                         "<h3 class='contentTitle'>" + this.title + "</h3>\n" + 
-                         "<p>" + this.description +"</p>\n" + 
-                         "<a href='" + this.href + "' class='link'>Más</a>\n";
+        $(this).load("projectCard.html");
+        $(this).find("#image").attr("src", this.image);
+        $(this).find("#title").text(this.title);
+        $(this).find("#description").text(this.innerText);
+        $(this).find("#link").attr("href", this.href);
+    }
+
+    attributeChangedCallback(attribute, oldValue, newValue){
+        if(oldValue != newValue){
+            this.createAttribute(attribute, newValue);
+        }
     }
 
     set image(source){
@@ -13,10 +20,6 @@ class ProjectCard extends HTMLElement{
 
     set title(value){
         this.createAttribute('title', value);
-    }
-
-    set description(value){
-        this.createAttribute('description', value);
     }
 
     set href(link){
@@ -29,10 +32,6 @@ class ProjectCard extends HTMLElement{
 
     get title(){
         return this.getAttribute('title');
-    }
-
-    get description(){
-        return this.getAttribute('description');
     }
 
     get href(){
