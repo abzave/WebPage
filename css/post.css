@@ -1,0 +1,23 @@
+.content{
+    font-size: 32px;
+}
+
+.categories{
+    display: flex;
+}
+
+.categories a{
+    color: #AFEF8B;
+    text-decoration: none !important;
+}
+
+.tags a{
+    background-color: #59B0BD;
+    color: #AFEF8B;
+    text-decoration: none !important;
+}
+
+hr{
+    border-color: #F9F871;
+    width: 75%;
+}
