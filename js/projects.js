@@ -259,7 +259,22 @@ function createProjectCard(info){
             "</project-card>\n</td>";
 }
 
+function selectRandomProjects(){
+    insertProject(projects["#personal"]);
+    insertProject(projects["#colaborative"]);
+    insertProject(projects["#university"]);
+}
+
+function insertProject(candidates){
+    $("#selectedProjects").prepend(createProjectCard(candidates[getRandomNumber(candidates.length)]));
+}
+
+function getRandomNumber(max){
+    return Math.floor(Math.random() * max);
+}
+
 $(document).ready(() => {
     insertProjects();
+    selectRandomProjects();
     applyProjectsStyle();
 });
