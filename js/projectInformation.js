@@ -1,6 +1,6 @@
 var project = {
     "title": "Keylogger",
-    "image": "D:/Pictures/Pic_20171107_203753_4096x2160.png",
+    "image": "/img/Pic_20171107_203753_4096x2160.png",
     "projectType": "Personal",
     "date": "5 Jul. 2017",
     "language": "C++",
@@ -14,6 +14,7 @@ $(document).ready(function(){
 });
 
 function loadProject(){
+    $("title").text("Proyecto - " + project["title"]);
     $("h1").text(project["title"]);
     $("img").attr("src", project["image"]);
     insertData("projectType");

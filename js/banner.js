@@ -1,4 +1,4 @@
-var imagesUrls = ["D:/Pictures/Pic_20171107_203753_4096x2160.png", "D:/Pictures/Pic_20170706_203225_4096x2160.png", "D:/Pictures/148221.jpg"];
+var imagesUrls = ["/img/Pic_20171107_203753_4096x2160.png", "/img/Pic_20170706_203225_4096x2160.png", "/img/148221.jpg"];
 var imageTitles = ["The Crew", "The Crew 2", "Need For Speed"];
 var imageDescriptions = ["Image from The Crew", "Another image from The Crew", "Image from Need For Speed"];
 

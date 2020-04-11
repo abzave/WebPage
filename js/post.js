@@ -23,6 +23,6 @@ function insertContent(){
 function insertList(name){
     const categories = $("#" + name);
     $.each(post[name], function(index, value){
-        categories.append("<a href='blog.html'>" + value + "</a> ")
+        categories.append("<a href='/blog.html'>" + value + "</a> ")
     });
 }

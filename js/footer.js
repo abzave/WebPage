@@ -1,3 +1,3 @@
 $(document).ready(() => {
-    $("footer").load("footer.html");
+    $("footer").load("/html/footer.html");
 });
