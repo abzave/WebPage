@@ -1,3 +1,7 @@
+.pageContent{
+    min-height: 89vh;
+}
+
 .contactForm .contact{
     background-color: #59B0BD;
     margin: 1% auto;
