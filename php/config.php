@@ -2,7 +2,7 @@
 
     interface Config{
         const DATABASE_DRIVE = 'mysql';
-        const HOST = 'your_host';
+        const HOST = 'localhost';
         const CHARSET = 'UTF8';
     }
 
