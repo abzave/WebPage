@@ -1,4 +1,3 @@
-
 function getPostHtml(value){
     return "<div class='post'>\n" + 
             "\t<img src='" + value["image"] + "'>\n" + 
@@ -9,7 +8,7 @@ function getPostHtml(value){
                 "\t\t</div>\n" + 
                 "\t\t<h2 class='contentTitle leftSpacing'>" + value["title"] + "</h2>\n" + 
                 "\t\t<p class='leftSpacing'>" + value["description"] + "</p>\n" + 
-                "\t\t<a href='" + value["link"] + "' class='link leftSpacing'>Más</a>\n" + 
+                "\t\t<a href='/html/post.php?post=" + encodeURIComponent(value["title"]) + "' class='link leftSpacing'>Más</a>\n" + 
             "\t</div>\n" + 
         "</div>\n";
 }

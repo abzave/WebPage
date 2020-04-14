@@ -63,3 +63,7 @@ b{
 .bottomSpacing{
     padding-bottom: 2%;
 }
+
+.pageContent{
+    min-height: 89vh;
+}
