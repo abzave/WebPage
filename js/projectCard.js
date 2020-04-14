@@ -1,10 +1,11 @@
 class ProjectCard extends HTMLElement{
 
     connectedCallback(){
+        var description = this.innerText
         $(this).load("/html/projectCard.html", function(){
             $(this).find("#image").attr("src", this.image);
             $(this).find("#title").text(this.title);
-            $(this).find("#description").text(this.innerText);
+            $(this).find("#description").text(description);
             $(this).find("#link").attr("href", this.href);
         });
     }

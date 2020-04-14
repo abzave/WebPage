@@ -1,37 +1,3 @@
-var entries = {
-    0: {
-        "image": "/img/Pic_20171107_203753_4096x2160.png", 
-        "date": "03 Mar. 2021",
-        "author": "Abraham Meza",
-        "title": "Post #1",
-        "description": "Description of post 1",
-        "link": "/html/post.html"
-    },
-    1: {
-        "image": "/img/Pic_20170706_203225_4096x2160.png", 
-        "date": "22 Oct. 2022",
-        "author": "Abraham Meza",
-        "title": "Post #2",
-        "description": "Description of post 2",
-        "link": "/html/post.html"
-    },
-    2: {
-        "image": "/img/148221.jpg", 
-        "date": "07 Apr. 2020",
-        "author": "Abraham Meza",
-        "title": "Post #3",
-        "description": "Description of post 3",
-        "link": "/html/post.html"
-    },
-    3: {
-        "image": "/img/Pic_20171107_203753_4096x2160.png", 
-        "date": "19 Feb. 2021",
-        "author": "Abraham Meza",
-        "title": "Post #4",
-        "description": "Description of post 4",
-        "link": "/html/post.html"
-    },
-};
 
 function getPostHtml(value){
     return "<div class='post'>\n" + 
@@ -51,6 +17,7 @@ function getPostHtml(value){
 function createPosts(){
     var postsHtml = "";
     $.each(entries, function(index, value){
+        console.log(value);
         postsHtml += getPostHtml(value);
     });
     $(".searchBox").after(postsHtml);
