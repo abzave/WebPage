@@ -1,28 +1,28 @@
-var post = {
-    "title": "Post #1",
-    "author": "Abraham Meza",
-    "date": "03 Mar. 2021",
-    "content": "<p>Description of post 1</p>\n<p>Content of post number 1</p>",
-    "categories": ["Test"],
-    "tags": ["Tag1", "Tag2"]
-};
-
 $(document).ready(function(){
     insertContent();
 });
 
 function insertContent(){
+    post = post[0];
     $("h1").text(post["title"]);
     $("#author").text(post["author"]);
     $("#date").text(post["date"]);
     $(".content").html(post["content"]);
-    insertList("categories");
-    insertList("tags");
+    $(".bannerImage").css(getBannerStyle(post["image"]));
+    insertList(categories);
+    insertList(tags);
 }
 
-function insertList(name){
-    const categories = $("#" + name);
-    $.each(post[name], function(index, value){
-        categories.append("<a href='blog.html'>" + value + "</a> ")
+function getBannerStyle(image){
+    return {"display": "block", "background": "url(" + image + ")", 
+    "background-position": "center center", "background-size": "cover", 
+    "background-repeat": "no-repeat"};
+}
+
+function insertList(list){
+    const key = Object.keys(list[0])[0];
+    const location = $("#" + key);
+    $.each(list, function(index, value){
+        location.append("<a href='/blog.php'>" + value[key] + "</a> ")
     });
 }
