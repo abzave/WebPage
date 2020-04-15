@@ -16,24 +16,24 @@
 		<header></header>
 		<div class="pageContent">
 			<h1 class="title" align="center">Contacto</h1>
-			<form class="contactForm" name="contact" method="POST">
+			<form class="contactForm" name="contact" method="POST" action="/php/SendMail.php">
 				<table class="contact">
 					<tr>
 						<td>
-							<input type="text" placeholder="Nombre">
+							<input type="text" placeholder="Nombre" name="name">
 						</td>
 						<td>
-							<input type="text" placeholder="Apellido">
+							<input type="text" placeholder="Apellido" name="lastname">
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2">
-							<input id="emailField" type="email" placeholder="Correo">
+							<input id="emailField" type="email" placeholder="Correo" name="email">
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2">
-							<textarea placeholder="Mensaje"></textarea>
+							<textarea placeholder="Mensaje" name="message"></textarea>
 						</td>
 					</tr>
 					<tr>
