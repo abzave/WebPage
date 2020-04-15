@@ -7,11 +7,11 @@
         private $subject; 
         private static $instance;
 
-        private function __constructor(){
+        private function __construct(){
             $this->header = "MIME-Version: 1.0\r\n" . 
                             "Content-type: text/html; charset=iso-8859-1\r\n";
             $this->toMail = "your_email";
-            $this->subject = "Contacto a través de página web";
+            $this->subject = "Correo de ";
         }
 
         public static function getInstance(){
@@ -23,7 +23,8 @@
 
         public function send($name, $from, $content){
             $finalHeader = $this->header . "From: $name < $from >\r\n";
-            mail($this->toMail, $this->subject, $content, $finalHeader);
+            $finalSubject = $this->subject . "$name ($from)";
+            mail($this->toMail, $finalSubject, $content, $finalHeader);
         }
 
     }
