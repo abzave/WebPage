@@ -60,10 +60,14 @@
 			</div>
 		</div>
 		<div class="projects">
+			<?php
+				require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/IndexController.php");
+				echo "<script>var projects = $projects</script>\n";
+			?>
 			<h2 class="title">Projectos</h2>
 			<div class="projectsShowcase" id="selectedProjects">
 				<div class="project" id="moreProjectsContainer">
-					<a href="html/projects.html" class="link" id="moreProjects">Más Projectos</a>
+					<a href="html/projects.php" class="link" id="moreProjects">Más Projectos</a>
 				</div>
 			</div>
 		</div>

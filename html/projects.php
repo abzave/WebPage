@@ -8,8 +8,12 @@
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/projects.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <?php
+            require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/ProjectsController.php");
+            echo "<script>var projects = $projects</script>\n";
+        ?>
         <script src="/js/functions.js"></script>
-		<script src="../js/header.js"></script>
+		<script src="/js/header.js"></script>
 		<script src="../js/projectCard.js"></script>
 		<script src="../js/projects.js"></script>
 		<script src="../js/footer.js"></script>

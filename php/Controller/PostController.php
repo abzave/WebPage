@@ -1,6 +1,6 @@
 <?php
 
-    require_once('BlogModel.php');
+    require_once('Model/BlogModel.php');
     $title = $_GET["post"];
     $model = BlogModel::getInstance();
     $post = $model->getPost($title);
