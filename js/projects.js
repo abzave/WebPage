@@ -17,17 +17,16 @@ function applyProjectsStyle(){
 }
 
 function insertProjects(){
-    $.each(projects, function(key, value){
+    $.each(projects, function(index, value){
         var projectCount = 0;
-        var showcase = createShowcase($(key).parent().parent());
-        $.each(value, function(index, value){
-            if(projectCount == ROW_LENGHT){
-                projectCount = 0;
-                showcase = createShowcase(showcase);
-            }
-            showcase.append(createProjectCard(value));
-            projectCount++;
-        });
+        console.log(value);
+        var showcase = createShowcase($(value["category"]).parent().parent());
+        if(projectCount == ROW_LENGHT){
+            projectCount = 0;
+            showcase = createShowcase(showcase);
+        }
+        showcase.append(createProjectCard(value));
+        projectCount++;
         verifyAligment(projectCount, showcase);
     });
 }
@@ -52,18 +51,19 @@ function createShowcase(base){
 
 function createProjectCard(info){
     return "<div class='project'>\n\t<project-card image='" + info["image"] + "' title='" + 
-            info["title"] + "' href='" + info["url"] + "'>" + info["description"] + 
-            "</project-card>\n</div>";
+            info["title"] + "' href='/html/projectInformation.html?project=" + 
+            encodeURIComponent(info["title"]) + "'>" + info["description"] + "</project-card>\n" + 
+            "</div>";
 }
 
 function selectRandomProjects(){
-    insertProject(projects["#personal"]);
+    insertProject(projects);
     if(getRandomBoolean()){
-        insertProject(projects["#colaborative"]);
+        insertProject(projects);
     }else{
-        insertProject(projects["#work"]);
+        insertProject(projects);
     }
-    insertProject(projects["#university"]);
+    insertProject(projects);
 }
 
 function insertProject(candidates){

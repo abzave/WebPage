@@ -1,8 +1,10 @@
 <?php
 
     require_once("Database.php");
-    require_once("IDatabases.php");
-    require_once("IQueries.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IDatabases.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IUsers.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IPasswords.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IQueries.php');
     
     class ProjectsModel extends Database{
 
@@ -16,7 +18,7 @@
         }
 
         public function getProjects(){
-            $response = $this->executeQuery("Select * FROM project");
+            $response = $this->executeQuery(IQueries::ALL_PROJECTS_PREVIEW);
             return $this->decodeResponse($response);
         }
 

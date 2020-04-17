@@ -1,6 +1,6 @@
 <?php
 
-    require('config.php');
+require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/Config.php');
 
     class Connect{
         public static function getConnection($database, $user, $password){

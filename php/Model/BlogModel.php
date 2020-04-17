@@ -1,8 +1,10 @@
 <?php
 
     require_once("Database.php");
-    require_once("IDatabases.php");
-    require_once("IQueries.php");
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IDatabases.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IUsers.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IPasswords.php');
+    require_once($_SERVER["DOCUMENT_ROOT"] . '/php/constants/IQueries.php');
 
     class BlogModel extends Database{
 
@@ -10,6 +12,8 @@
 
         private function __construct(){
             $this->databaseName = IDatabases::BLOG;
+            $this->user = 'your_user';
+            $this->password = 'your_password';
             $this->setConnection();
         }
 
