@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/projects.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <?php
-            require_once($_SERVER["DOCUMENT_ROOT"] . "/php/ProjectsController.php");
+            require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/ProjectsController.php");
             echo "<script>var projects = $projects</script>\n";
         ?>
         <script src="/js/functions.js"></script>

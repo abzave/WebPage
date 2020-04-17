@@ -31,11 +31,11 @@
             </div>
             <div class="content leftSpacing rightSpacing topSpacing bottomSpacing"></div>
             <div class="categories leftSpacing">
-                <p id="categories">Categorías:  </p>
+                <p id="category">Categorías:  </p>
             </div>
             <hr align="left" class="leftSpacing">
             <div class="tags leftSpacing">
-                <p id="tags">Tags: </p>
+                <p id="tag">Tags: </p>
             </div>
         </div>
         <footer></footer>

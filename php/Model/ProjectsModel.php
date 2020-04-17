@@ -22,6 +22,26 @@
             return $this->decodeResponse($response);
         }
 
+        public function getProject($title){
+            $response = $this->executePreparedQuery(IQueries::PROJECT_INFORMATION, array($title));
+            return $this->decodeResponse($response);
+        }
+
+        public function getProjectLanguages($title){
+            $response = $this->executePreparedQuery(IQueries::PROJECT_LANGUAGES, array($title));
+            return $this->decodeResponse($response);
+        }
+
+        public function getProjectTechnologies($title){
+            $response = $this->executePreparedQuery(IQueries::PROJECT_TECHNOLOGIES, array($title));
+            return $this->decodeResponse($response);
+        }
+
+        public function getProjectParadigms($title){
+            $response = $this->executePreparedQuery(IQueries::PROJECT_PARADIGMS, array($title));
+            return $this->decodeResponse($response);
+        }
+
         public static function getInstance(){
             if(!ProjectsModel::$instance){
                 ProjectsModel::$instance = new ProjectsModel();

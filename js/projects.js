@@ -1,4 +1,5 @@
 const ROW_LENGHT = 4;
+const PROJECTS_TO_SELECT = 3;
 
 function applyProjectsStyle(){
     const projects = $(".projects .projectsShowcase .project");
@@ -19,7 +20,6 @@ function applyProjectsStyle(){
 function insertProjects(){
     $.each(projects, function(index, value){
         var projectCount = 0;
-        console.log(value);
         var showcase = createShowcase($(value["category"]).parent().parent());
         if(projectCount == ROW_LENGHT){
             projectCount = 0;
@@ -51,23 +51,21 @@ function createShowcase(base){
 
 function createProjectCard(info){
     return "<div class='project'>\n\t<project-card image='" + info["image"] + "' title='" + 
-            info["title"] + "' href='/html/projectInformation.html?project=" + 
+            info["title"] + "' href='/html/projectInformation.php?project=" + 
             encodeURIComponent(info["title"]) + "'>" + info["description"] + "</project-card>\n" + 
             "</div>";
 }
 
 function selectRandomProjects(){
-    insertProject(projects);
-    if(getRandomBoolean()){
-        insertProject(projects);
-    }else{
-        insertProject(projects);
+    for(var project = 0; project < PROJECTS_TO_SELECT; project++){
+        projects = insertProject(projects);
     }
-    insertProject(projects);
 }
 
 function insertProject(candidates){
-    $("#selectedProjects").prepend(createProjectCard(candidates[getRandomNumber(candidates.length)]));
+    const selected = getRandomNumber(candidates.length);
+    $("#selectedProjects").prepend(createProjectCard(candidates[selected]));
+    return candidates.slice(selected, 1);
 }
 
 function getRandomNumber(max){
