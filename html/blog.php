@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="/css/footer.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <?php
-            require_once($_SERVER["DOCUMENT_ROOT"] . "/php/blogController.php");
+            require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/blogController.php");
             echo "<script>var entries = $postsPreview</script>";
         ?>
         <script src="/js/functions.js"></script>

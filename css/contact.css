@@ -43,3 +43,8 @@
 .email{
     display: flex;
 }
+
+input:-internal-autofill-selected{
+    background-color: #59B0BD;
+    color: #F9F871;
+}

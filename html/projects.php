@@ -21,10 +21,10 @@
     <body>
 		<header></header>
         <table class="projects">
-			<tr><td><h2 class="title" id="personal">Projectos Personales</h2></td></tr>
-			<tr><td><h2 class="title" id="colaborative">Projectos Colaborativos</h2></td></tr>
-			<tr><td><h2 class="title" id="work">Projectos Laborales</h2></td></tr>
-			<tr><td><h2 class="title" id="university">Projectos de la Universidad</h2></td></tr>
+			<tr class="row"><td><h2 class="title" id="personal">Projectos Personales</h2></td></tr>
+			<tr class="row"><td><h2 class="title" id="colaborative">Projectos Colaborativos</h2></td></tr>
+			<tr class="row"><td><h2 class="title" id="work">Projectos Laborales</h2></td></tr>
+			<tr class="row"><td><h2 class="title" id="university">Projectos de la Universidad</h2></td></tr>
 		</table>
         <footer></footer>
     </body>

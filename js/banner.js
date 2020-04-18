@@ -1,29 +1,40 @@
-var imagesUrls = ["/img/Pic_20171107_203753_4096x2160.png", "/img/Pic_20170706_203225_4096x2160.png", "/img/148221.jpg"];
-var imageTitles = ["The Crew", "The Crew 2", "Need For Speed"];
-var imageDescriptions = ["Image from The Crew", "Another image from The Crew", "Image from Need For Speed"];
-
 $(document).ready(() => {
-    var currentIndex = 0;
-    showImage(currentIndex);
-    $("#leftSlide").click(() => {
-        currentIndex = showImage(currentIndex - 1);
-    });
-    $("#rightSlide").click(() => {
-        currentIndex = showImage(currentIndex + 1);
-    });
+    if(posts != undefined){
+        setupBanner();
+    }else{
+        setupBannerImage();
+    }
 });
 
-function showImage(imageIndex) {
-    if (imageIndex >= imagesUrls.length) {
-        imageIndex = 0;
-    } else if (imageIndex < 0) {
-        imageIndex = imagesUrls.length - 1;
+function showPost(index) {
+    if (index >= posts.length) {
+        index = 0;
+    } else if (index < 0) {
+        index = posts - 1;
     }
-    $(".bannerImage").css({"display": "block", "background": "url(" + imagesUrls[imageIndex] + ")", 
+    post = posts[index];
+    $(".bannerImage").css({"display": "block", "background": "url(" + post['image'] + ")", 
                            "background-position": "center center", "background-size": "cover", 
                            "background-repeat": "no-repeat"});
-    $(".imageInfo h2 a").html(imageTitles[imageIndex]);
-    $(".imageInfo p").html(imageDescriptions[imageIndex]);
+    $(".imageInfo h2 a").html(post['title']);
+    $(".imageInfo p").html(post['description']);
+    $(".imageInfo a").attr('href', '/html/post.php?post=' + encodeURIComponent(post['title']));
+    return index;
+}
 
-    return imageIndex;
+function setupBanner(){
+    var currentIndex = 0;
+    showPost(currentIndex);
+    $("#leftSlide").click(() => {
+        currentIndex = showPost(currentIndex - 1);
+    });
+    $("#rightSlide").click(() => {
+        currentIndex = showPost(currentIndex + 1);
+    });
+}
+
+function setupBannerImage(){
+    $(".bannerImage").css({"display": "block", "background": "url(" + post['image'] + ")", 
+                           "background-position": "center center", "background-size": "cover", 
+                           "background-repeat": "no-repeat"});
 }

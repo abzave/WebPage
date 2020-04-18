@@ -10,8 +10,9 @@
         <link rel="stylesheet" href="/css/footer.css">
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
         <?php
-            require_once($_SERVER["DOCUMENT_ROOT"] . '/php/postController.php');
-            echo "<script>var post = $post;\n" . 
+            require_once($_SERVER["DOCUMENT_ROOT"] . '/php/Controller/postController.php');
+            echo "<script>var posts = undefined;\n" . 
+                         "var post = $post;\n" . 
                          "var categories = $categories\n" . 
                          "var tags = $tags</script>";
         ?>

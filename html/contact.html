@@ -16,19 +16,19 @@
 		<header></header>
 		<div class="pageContent">
 			<h1 class="title" align="center">Contacto</h1>
-			<form class="contactForm" name="contact" method="POST" action="/php/SendMail.php">
+			<form class="contactForm" name="contact" method="POST" action="/php/Mail/SendMail.php">
 				<table class="contact">
 					<tr>
 						<td>
-							<input type="text" placeholder="Nombre" name="name">
+							<input type="text" placeholder="Nombre" name="name" autocomplete="off">
 						</td>
 						<td>
-							<input type="text" placeholder="Apellido" name="lastname">
+							<input type="text" placeholder="Apellido" name="lastname" autocomplete="off">
 						</td>
 					</tr>
 					<tr>
 						<td colspan="2">
-							<input id="emailField" type="email" placeholder="Correo" name="email">
+							<input id="emailField" type="email" placeholder="Correo" name="email" autocomplete="off">
 						</td>
 					</tr>
 					<tr>

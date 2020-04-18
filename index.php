@@ -21,11 +21,15 @@
 	<body>
 		<header></header>
 		<div class="banner">
+			<?php
+				require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/IndexController.php");
+				echo "<script>var posts = $posts</script>\n";
+			?>
 			<div class="bannerImage"></div>
 			<button class="slideButton" id="leftSlide">&#706;</button>
 			<button class="slideButton" id="rightSlide">&#707;</button>
 			<div class="imageInfo">
-				<h2><a href="html/blog.php" class="link"></a></h2>
+				<h2><a class="link"></a></h2>
 				<p></p>
 			</div>
 		</div>
@@ -61,7 +65,6 @@
 		</div>
 		<div class="projects">
 			<?php
-				require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/IndexController.php");
 				echo "<script>var projects = $projects</script>\n";
 			?>
 			<h2 class="title">Projectos</h2>
@@ -71,25 +74,25 @@
 				</div>
 			</div>
 		</div>
-		<form class="contactForm" name="contact" method="POST">
+		<form class="contactForm" name="contact" method="POST" action="/php/Mail/SendMail.php">
 			<h2 class="title">Contacto</h2>
 			<table class="contact">
 				<tr>
 					<td>
-						<input type="text" placeholder="Nombre">
+						<input type="text" placeholder="Nombre" name="name" autocomplete="off">
 					</td>
 					<td>
-						<input type="text" placeholder="Apellido">
+						<input type="text" placeholder="Apellido" name="lastname" autocomplete="off">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input id="emailField" type="email" placeholder="Correo">
+						<input id="emailField" type="email" placeholder="Correo" name="email" autocomplete="off">
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<textarea placeholder="Mensaje"></textarea>
+						<textarea placeholder="Mensaje" name="message"></textarea>
 					</td>
 				</tr>
 				<tr>

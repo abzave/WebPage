@@ -18,27 +18,36 @@ function applyProjectsStyle(){
 }
 
 function insertProjects(){
+    var currentCategory;
+    var showcase;
+    var categories = {};
     $.each(projects, function(index, value){
-        var projectCount = 0;
-        var showcase = createShowcase($(value["category"]).parent().parent());
-        if(projectCount == ROW_LENGHT){
-            projectCount = 0;
+        if (value['category'] != currentCategory){
+            currentCategory = value['category'];
+            showcase = createShowcase($(currentCategory).parent().parent());
+            if(categories[currentCategory] == undefined){
+                categories[currentCategory] = 0;
+            }
+        }
+        categories[currentCategory]++;
+        if(!(categories[currentCategory] % ROW_LENGHT)){
             showcase = createShowcase(showcase);
         }
         showcase.append(createProjectCard(value));
-        projectCount++;
-        verifyAligment(projectCount, showcase);
     });
+    verifyAligment(categories);
 }
 
-function verifyAligment(projectCount, showcase){
-    const remaining = projectCount % ROW_LENGHT;
-    if(remaining != 0){
-        const cardsNedeed = ROW_LENGHT - remaining;
-        for(var card = 0; card < cardsNedeed; card++){
-            showcase.append(createEmptyCard());
+function verifyAligment(categories){
+    $.each(categories, function(key, value){
+        var remaining = value % ROW_LENGHT;
+        if(remaining){
+            const cardsNedeed = ROW_LENGHT - remaining;
+            for(var card = 0; card < cardsNedeed; card++){
+                $(key).parent().parent().siblings(".row").first().prev().append(createEmptyCard());
+            }
         }
-    }
+    });
 }
 
 function createEmptyCard(){
@@ -65,7 +74,8 @@ function selectRandomProjects(){
 function insertProject(candidates){
     const selected = getRandomNumber(candidates.length);
     $("#selectedProjects").prepend(createProjectCard(candidates[selected]));
-    return candidates.slice(selected, 1);
+    candidates.splice(selected, 1)
+    return candidates;
 }
 
 function getRandomNumber(max){
@@ -78,6 +88,8 @@ function getRandomBoolean(){
 
 $(document).ready(() => {
     insertProjects();
-    selectRandomProjects();
+    if(window.location.pathname == "/index.php"){
+        selectRandomProjects();
+    }
     applyProjectsStyle();
 });
