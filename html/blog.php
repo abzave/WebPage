@@ -22,10 +22,10 @@
         <div class="pageContent">
             <h1 class="title">Posts del Blog</h1>
             <div class="posts">
-                <div class="searchBox">
-                    <input type="search" placeholder="Buscar">
+                <form class="searchBox" method="GET" action="">
+                    <input type="search" placeholder="Buscar" name="search">
                     <input type="submit" value="Buscar">
-                </div>
+                </form>
                 <div class="pageContainer">
                     <button class="pages" onclick="goToPage('blog.php')">&#706;</button>
                     <button class="pages" onclick="goToPage('blog.php')">1</button>

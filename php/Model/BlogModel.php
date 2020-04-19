@@ -27,6 +27,11 @@
             return $this->decodeResponse($response);
         }
 
+        public function searchPosts($criteria){
+            $response = $this->executePreparedQuery(IQueries::POSTS_SIMILAR_TO, array($criteria));
+            return $this->decodeResponse($response);    
+        }
+
         public function getCategories($title){
             $response = $this->executePreparedQuery(IQueries::POST_CATEGORIES, array($title));
             return $this->decodeResponse($response);
