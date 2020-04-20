@@ -2,6 +2,7 @@
 
     require_once($_SERVER["DOCUMENT_ROOT"] . '/php/Model/BlogModel.php');
     $model = BlogModel::getInstance();
+    $categories = $model->getAllCategories();
     if(!isset($_GET["search"])){
         $postsPreview = $model->getPostsPreview();
     }else{

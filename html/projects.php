@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Projectos</title>
         <link rel="stylesheet" href="../css/body.css">
+        <link rel="stylesheet" href="/css/dropdown.css">
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/projects.css">

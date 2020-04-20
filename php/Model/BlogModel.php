@@ -22,6 +22,11 @@
             return $this->decodeResponse($response);
         }
 
+        public function getAllCategories(){
+            $response = $this->executeQuery(IQueries::ALL_CATEGORIES);
+            return $this->decodeResponse($response);
+        }
+
         public function getPost($title){
             $response = $this->executePreparedQuery(IQueries::POST_CONTENT, array($title));
             return $this->decodeResponse($response);

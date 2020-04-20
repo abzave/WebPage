@@ -19,11 +19,18 @@ function createPosts(){
         console.log(value);
         postsHtml += getPostHtml(value);
     });
-    $(".searchBox").after(postsHtml);
+    $(".searchBoxes").after(postsHtml);
+}
+
+function loadCategories(){
+    $.each(categories, function(index, value){
+        $("#categories").append("<option value='" + value["name"] + "'>" + value["name"] + "</option>");
+    });
 }
 
 $(document).ready(function(){
     createPosts();
+    loadCategories();
     $(".post").click(function(){
         window.location.href = $(this).find(".link").attr("href");
     });
