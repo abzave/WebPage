@@ -22,10 +22,15 @@
         <div class="pageContent">
             <h1 class="title">Posts del Blog</h1>
             <div class="posts">
-                <form class="searchBox" method="GET" action="">
-                    <input type="search" placeholder="Buscar" name="search">
-                    <input type="submit" value="Buscar">
-                </form>
+                <div class="searchBoxes">
+                    <form class="searchBox" method="GET" action="">
+                        <input type="search" placeholder="Buscar" name="search">
+                        <input type="submit" value="Buscar">
+                    </form>
+                    <select id="categories" name="category[]" multiple="multiple">
+                        <option value="0" selected="selected">Select</option>
+                    </select>
+                </div>
                 <div class="pageContainer">
                     <button class="pages" onclick="goToPage('blog.php')">&#706;</button>
                     <button class="pages" onclick="goToPage('blog.php')">1</button>

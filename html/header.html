@@ -1,4 +1,5 @@
 <script src="/js/dropdown.js"></script>
+<script src="/js/dropdownOption.js"></script>
 
 <a href="/index.php" id="pageLink">abzave.com</a>
 <div class="menu">
@@ -7,21 +8,8 @@
     <button class="menuButton" onclick="goToPage('/html/blog.php')">Blog</button>
     <button class="menuButton" onclick="goToPage('/html/about.html')">Acerca de</button>
     <button class="menuButton" onclick="goToPage('/html/contact.html')">Contacto</button>
-    <div class="dropdown">
-        <div class="selectBox">
-            <div class="optionBox">
-                <div class="option">
-                    <input type="radio" id="ES" class="radio" name="language">
-                    <label for="ES">ES</label>
-                </div>
-                <div class="option">
-                    <input type="radio" id="EN" class="radio" name="language">
-                    <label for="EN">EN</label>
-                </div>
-            </div>
-            <div class="selected">
-                ES
-            </div>
-        </div>
-    </div>
+    <custom-dropdown default="ES">
+        <dropdown-option name="language">ES</dropdown-option>
+        <dropdown-option name="language">EN</dropdown-option>
+    </custom-dropdown>
 </div>
