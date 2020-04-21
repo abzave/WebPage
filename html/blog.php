@@ -44,6 +44,9 @@
                         </custom-dropdown>
                         <input type="submit" value="Aplicar" class="apply">
                     </form>
+                    <form class="searchBox" method="GET" action="">
+                        <input type="reset" value="Limpiar" class="apply" onClick="goToPage('/html/blog.php')">
+                    </form>
                 </div>
                 <div class="pageContainer">
                     <button class="pages" onclick="goToPage('blog.php')">&#706;</button>

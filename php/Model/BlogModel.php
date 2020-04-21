@@ -42,6 +42,16 @@
             return $this->decodeResponse($response);    
         }
 
+        public function searchPostsByCategory($category){
+            $response = $this->executePreparedQuery(IQueries::POSTS_BY_CATEGORIES, array($category));
+            return $this->decodeResponse($response);    
+        }
+
+        public function searchPostsByTag($tag){
+            $response = $this->executePreparedQuery(IQueries::POSTS_BY_TAGS, array($tag));
+            return $this->decodeResponse($response);    
+        }
+
         public function getCategories($title){
             $response = $this->executePreparedQuery(IQueries::POST_CATEGORIES, array($title));
             return $this->decodeResponse($response);
