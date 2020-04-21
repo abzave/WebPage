@@ -17,8 +17,8 @@
             $this->setConnection();
         }
 
-        public function getPostsPreview(){
-            $response = $this->executeQuery(IQueries::ALL_POSTS_PREVIEW);
+        public function getPostsPreview($limit, $offset){
+            $response = $this->executePreparedQuery(IQueries::ALL_POSTS_PREVIEW, array($offset, $limit), PDO::PARAM_INT);
             return $this->decodeResponse($response);
         }
 
@@ -37,18 +37,18 @@
             return $this->decodeResponse($response);
         }
 
-        public function searchPosts($criteria){
-            $response = $this->executePreparedQuery(IQueries::POSTS_SIMILAR_TO, array($criteria));
+        public function searchPosts($criteria, $limit, $offset){
+            $response = $this->executePreparedQueryWithLimit(IQueries::POSTS_SIMILAR_TO, array($criteria), array($offset, $limit));
             return $this->decodeResponse($response);    
         }
 
-        public function searchPostsByCategory($category){
-            $response = $this->executePreparedQuery(IQueries::POSTS_BY_CATEGORIES, array($category));
+        public function searchPostsByCategory($categoryList, $limit, $offset){
+            $response = $this->executePreparedQueryWithLimit(IQueries::POSTS_BY_CATEGORIES . $this->adjustParameters($categoryList), $categoryList, array($offset, $limit));
             return $this->decodeResponse($response);    
         }
 
-        public function searchPostsByTag($tag){
-            $response = $this->executePreparedQuery(IQueries::POSTS_BY_TAGS, array($tag));
+        public function searchPostsByTag($tagList, $limit, $offset){
+            $response = $this->executePreparedQueryWithLimit(IQueries::POSTS_BY_TAGS . $this->adjustParameters($tagList), $tagList, array($offset, $limit));
             return $this->decodeResponse($response);    
         }
 
@@ -60,6 +60,14 @@
         public function getTags($title){
             $response = $this->executePreparedQuery(IQueries::POST_TAGS, array($title));
             return $this->decodeResponse($response);
+        }
+
+        private function adjustParameters($list){
+            $filter = "";
+            foreach($list as $data){
+                $filter .= "?, ";
+            }
+            return substr($filter, 0, strlen($filter) - 2) . ") LIMIT ?, ?";
         }
 
         public static function getInstance(){

@@ -50,7 +50,7 @@
                 </div>
                 <div class="pageContainer">
                     <button class="pages" onclick="goToPage('blog.php')">&#706;</button>
-                    <button class="pages" onclick="goToPage('blog.php')">1</button>
+                    <button class="pages" onclick="goToPage('blog.php?page=0')">1</button>
                     <button class="pages" onclick="goToPage('blog.php')">&#707;</button>
                 </div>
             </div>
