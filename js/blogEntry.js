@@ -16,21 +16,21 @@ function getPostHtml(value){
 function createPosts(){
     var postsHtml = "";
     $.each(entries, function(index, value){
-        console.log(value);
         postsHtml += getPostHtml(value);
     });
     $(".searchBoxes").after(postsHtml);
 }
 
-function loadCategories(){
-    $.each(categories, function(index, value){
-        $("#categories").append("<option value='" + value["name"] + "'>" + value["name"] + "</option>");
+function loadlist(list, id){
+    $.each(list, function(index, value){
+        $(id).append("<option value='" + value["name"] + "'>" + value["name"] + "</option>");
     });
 }
 
 $(document).ready(function(){
     createPosts();
-    loadCategories();
+    loadlist(categories, "#categories");
+    loadlist(tags, "#tags");
     $(".post").click(function(){
         window.location.href = $(this).find(".link").attr("href");
     });

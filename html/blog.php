@@ -12,7 +12,8 @@
         <?php
             require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/blogController.php");
             echo "<script>const entries = $postsPreview;\n" . 
-                 "const categories = $categories</script>";
+                 "const categories = $categories;\n" . 
+                 "const tags = $tags;</script>";
         ?>
         <script src="/js/functions.js"></script>
         <script src="/js/header.js"></script>
@@ -34,7 +35,14 @@
                             <select id="categories" name="category[]" multiple>
                             </select>
                         </custom-dropdown>
-                        <input type="submit" value="Aplicar" id="apply">
+                        <input type="submit" value="Aplicar" class="apply">
+                    </form>
+                    <form class="searchBox" method="GET" action="">
+                        <custom-dropdown default="Etiquetas">
+                            <select id="tags" name="tag[]" multiple>
+                            </select>
+                        </custom-dropdown>
+                        <input type="submit" value="Aplicar" class="apply">
                     </form>
                 </div>
                 <div class="pageContainer">

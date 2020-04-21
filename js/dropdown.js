@@ -18,6 +18,11 @@ class Dropdown extends HTMLElement{
             $(this).find(".selected").text($(this).find("label").html());
             $(this).find(".optionBox").removeClass("active").slideUp(400);
         });
+        $(document).mouseup(function(e){
+            if($(this).find(".optionBox").hasClass("active") && !$(this).is(e.target) && $(this).has(e.target)){
+                $(this).find(".optionBox").removeClass("active").slideUp(400);
+            }
+        });
     }
 
     attributeChangedCallback(attribute, oldValue, newValue){

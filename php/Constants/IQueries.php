@@ -4,6 +4,7 @@
 
         const ALL_POSTS_PREVIEW = "SELECT title, description, author, path AS image, date FROM post INNER JOIN image ON post.image = image.id";
         const ALL_CATEGORIES = "SELECT name FROM category";
+        const ALL_TAGS = "SELECT name FROM tag";
         const POSTS_SIMILAR_TO = "SELECT title, description, author, path AS image, date FROM post INNER JOIN image ON post.image = image.id WHERE title LIKE ?";
         const POST_CONTENT = "SELECT path AS image, author, date, content FROM post INNER JOIN image ON post.image = image.id WHERE title = ?";
         const POST_CATEGORIES = "SELECT category FROM post_categories WHERE post = ?";
