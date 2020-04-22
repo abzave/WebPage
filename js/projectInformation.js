@@ -1,6 +1,9 @@
 $(document).ready(function(){
     $("#back").click(() => window.history.back());
     loadProject();
+    $("#url").click(function(){
+        window.location.href = project['url'];
+    });
 });
 
 function loadProject(){
@@ -14,10 +17,11 @@ function loadProject(){
     insertList("#technologies", technologies);
     insertList("#paradigm", paradigms);
     insertData("long_description");
+    insertData("url");
 }
 
 function insertData(key){
-    $("#" + key).find("b").after(project[key] + ".");
+    $("#" + key).find("b").after(project[key]);
 }
 
 function insertList(key, list){
@@ -31,7 +35,7 @@ function insertList(key, list){
 }
 
 function insertCategory(){
-    $("#category").find("b").after(parseCategory(project["category"]) + ".");
+    $("#category").find("b").after(parseCategory(project["category"]));
 }
 
 function parseCategory(category){

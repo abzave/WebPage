@@ -2,7 +2,7 @@
 
     require_once($_SERVER["DOCUMENT_ROOT"] . '/php/Model/BlogModel.php');
     
-    const LIMIT = 1;
+    const LIMIT = 5;
 
     $page = (isset($_GET["page"]) ? $_GET["page"] : 0);
     $offset = $page * LIMIT;

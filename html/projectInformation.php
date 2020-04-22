@@ -17,6 +17,7 @@
                  "var technologies = $technologies;\n" . 
                  "var paradigms = $paradigms</script>\n";
         ?>
+        <script src="/js/functions.js"></script>
         <script src="/js/header.js"></script>
         <script src="/js/projectInformation.js"></script>
 		<script src="/js/footer.js"></script>
@@ -34,6 +35,7 @@
                     <p id="technologies"><b>Tecnologías: </b></p>
                     <p id="paradigm"><b>Paradigma: </b></p>
                     <p id="long_description"><b>Descripción: </b></p>
+                    <p id="url"><b>Link: </b></p>
                     <center><a id="back" class="link">Volver</a></center>
                 </div>
             </div>
