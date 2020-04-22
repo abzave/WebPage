@@ -4,16 +4,20 @@
 }
 
 .posts{
-    background-color: #59B0BD;
     padding-bottom: 2%;
+}
+
+.posts .searchBoxes{
+    float: right;
+    margin-right: 34%;
+    margin-top: 2%;
 }
 
 .posts .searchBox{
     background-color: #6F97AB;
     padding: 1%;
-    float: right;
-    margin-right: 34%;
-    margin-top: 2%;
+    margin-bottom: 5%;
+    min-height: 20px;   
 }
 
 .posts .searchBox input{
@@ -23,6 +27,11 @@
     border-style: solid;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    margin-bottom: 3%;
+}
+
+#categories .optionBox{
+    background-color: #6F97AB;
 }
 
 .posts .searchBox input::placeholder{
@@ -71,17 +80,18 @@
     margin-left: 1%;
 }
 
-.pageContainer{
-    margin-left: 50%;
-}
-
 .pages{
     background-color: #AFEF8B;
     color: #59B0BD;
     border: none;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .pages:focus{
 	outline: 0;
+}
+
+.apply{
+    margin-left: 100px;
 }

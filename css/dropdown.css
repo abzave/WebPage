@@ -1,0 +1,82 @@
+.dropdown{
+	width: 2em;
+	margin-left: 0.4em;
+}
+
+.selectBox{
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	position: absolute;
+}
+
+.selectBox .optionBox{
+	background-color: #59B0BD;
+	color: #F9F871;
+	border: 1px solid #6F97AB;
+	border-bottom: 0px;
+	border-radius: 2px;
+	opacity: 0;
+	overflow: hidden;
+	max-height: 240px;
+	z-index: 1;
+	order: 1;
+}
+
+.selectBox .optionBox.active + .selected::after{
+	content: "\2BC5";
+}
+
+.selectBox .option{
+	border-bottom: 1px solid #6F97AB;
+}
+
+.selectBox .option, .selected{
+	cursor: pointer;
+}
+
+.selectBox .option:hover{
+	color: #73DFA9;
+}
+
+.selectBox .option .radio{
+	display: none;
+}
+
+
+.selectBox label{
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.selected{
+	color: #F9F871;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.selected::after{
+	content: "\2BC6";
+}
+
+.selected:hover{
+	color: #73DFA9;
+}
+
+.optionBox select{
+	background-color: #6F97AB;
+	width: 100%;
+	overflow: auto; 
+}
+
+.optionBox select option{
+	background-color: #6F97AB;
+	color: #F9F871;
+	cursor: pointer;
+}
+
+.optionBox select option:hover, .optionBox select option:checked{
+	background-color: #59B0BD !important;
+	color: #AFEF8B !important;
+}

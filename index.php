@@ -4,6 +4,7 @@
 		<title>abzave</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/body.css">
+		<link rel="stylesheet" href="/css/dropdown.css">
 		<link rel="stylesheet" href="css/header.css">
 		<link rel="stylesheet" href="css/banner.css">
 		<link rel="stylesheet" href="css/presentation.css">
@@ -23,7 +24,8 @@
 		<div class="banner">
 			<?php
 				require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/IndexController.php");
-				echo "<script>var posts = $posts</script>\n";
+				echo "<script>var posts = $posts;" . 
+					 "var projects = $projects;</script>\n";
 			?>
 			<div class="bannerImage"></div>
 			<button class="slideButton" id="leftSlide">&#706;</button>

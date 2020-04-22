@@ -16,14 +16,37 @@ function getPostHtml(value){
 function createPosts(){
     var postsHtml = "";
     $.each(entries, function(index, value){
-        console.log(value);
         postsHtml += getPostHtml(value);
     });
-    $(".searchBox").after(postsHtml);
+    $(".searchBoxes").after(postsHtml);
+}
+
+function loadlist(list, id){
+    $.each(list, function(index, value){
+        $(id).append("<option value='" + value["name"] + "'>" + value["name"] + "</option>");
+    });
+}
+
+function createPages(){
+    const pages = Math.ceil(totalPosts[0]["amount"] / limit);
+    const lastButton = $(".pageContainer");
+    lastButton.append(createPageButton(Math.max(currentPage - 1, 0), "&#706;"));
+    for(var page = 0; page < pages; page++){
+        lastButton.append(createPageButton(page, page + 1));
+    }
+    lastButton.append(createPageButton(Math.min(currentPage + 1, pages - 1), "&#707;"));
+    lastButton.append(createPageButton(pages - 1, "&#707;&#707;"));
+}
+
+function createPageButton(index, content){
+    return "<button class='pages' onclick='goToPage(\"blog.php?page=" + index + "\")'>" + content + "</button>";
 }
 
 $(document).ready(function(){
     createPosts();
+    loadlist(categories, "#categories");
+    loadlist(tags, "#tags");
+    createPages();
     $(".post").click(function(){
         window.location.href = $(this).find(".link").attr("href");
     });

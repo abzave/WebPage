@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Blog</title>
         <link rel="stylesheet" href="/css/body.css">
+        <link rel="stylesheet" href="/css/dropdown.css">
         <link rel="stylesheet" href="/css/header.css">
         <link rel="stylesheet" href="/css/banner.css">
         <link rel="stylesheet" href="/css/post.css">
