@@ -4,7 +4,6 @@
 }
 
 .posts{
-    background-color: #59B0BD;
     padding-bottom: 2%;
 }
 
@@ -81,15 +80,12 @@
     margin-left: 1%;
 }
 
-.pageContainer{
-    margin-left: 50%;
-}
-
 .pages{
     background-color: #AFEF8B;
     color: #59B0BD;
     border: none;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .pages:focus{

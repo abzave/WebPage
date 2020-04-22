@@ -21,12 +21,13 @@ function insertData(key){
 }
 
 function insertList(key, list){
-    console.log(list);
+    var listText = "";
     $.each(list, function(index, value){
-       $.each(value, function(listKey, language){
-            $(key).find("b").after(language + (index == list.length - 1 ? (list.length == 1 ? "." : ", ") : "."));
+       $.each(value, function(listKey, listValue){
+            listText += listValue + (index == list.length - 1 ? "." : ", ");
        });
     });
+    $(key).find("b").after(listText);
 }
 
 function insertCategory(){

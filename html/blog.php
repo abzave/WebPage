@@ -13,7 +13,10 @@
             require_once($_SERVER["DOCUMENT_ROOT"] . "/php/Controller/blogController.php");
             echo "<script>const entries = $postsPreview;\n" . 
                  "const categories = $categories;\n" . 
-                 "const tags = $tags;</script>";
+                 "const tags = $tags;\n" . 
+                 "const totalPosts = $totalPosts;\n" . 
+                 "const currentPage = $page;\n" . 
+                 "const limit = " . LIMIT . ";\n</script>";
         ?>
         <script src="/js/functions.js"></script>
         <script src="/js/header.js"></script>
@@ -48,10 +51,8 @@
                         <input type="reset" value="Limpiar" class="apply" onClick="goToPage('/html/blog.php')">
                     </form>
                 </div>
-                <div class="pageContainer">
-                    <button class="pages" onclick="goToPage('blog.php')">&#706;</button>
-                    <button class="pages" onclick="goToPage('blog.php?page=0')">1</button>
-                    <button class="pages" onclick="goToPage('blog.php')">&#707;</button>
+                <div class="pageContainer" align="center">
+                    <button class="pages" onclick="goToPage('blog.php?page=0')">&#706;&#706;</button>
                 </div>
             </div>
         </div>

@@ -88,7 +88,7 @@ function getRandomBoolean(){
 
 $(document).ready(() => {
     insertProjects();
-    if(window.location.pathname == "/index.php"){
+    if(window.location.pathname == "/index.php" || window.location.pathname == "/"){
         selectRandomProjects();
     }
     applyProjectsStyle();

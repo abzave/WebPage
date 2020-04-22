@@ -10,7 +10,7 @@ function showPost(index) {
     if (index >= posts.length) {
         index = 0;
     } else if (index < 0) {
-        index = posts - 1;
+        index = posts.length - 1;
     }
     post = posts[index];
     $(".bannerImage").css({"display": "block", "background": "url(" + post['image'] + ")", 

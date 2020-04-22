@@ -21,7 +21,7 @@
         }
 
         protected function executePreparedQueryWithLimit($query, $values, $limits, $dataType = PDO::PARAM_STR){
-            $response = $this->connection->prepare($query);
+            $response = $this->connection->prepare($query . IQueries::LIMIT_QUERY);
             $this->bindList($response, $values);
             $this->bindList($response, $limits, count($values), PDO::PARAM_INT);
             $response->execute();
