@@ -1,5 +1,5 @@
 header{
-	background-color: #59B0BD;
+	background-color: #574454;
 	display: flex;
 	justify-content: space-between;
 	margin-left: -0.5em;
@@ -36,7 +36,7 @@ header{
 }
 
 #home:hover{
-	color: #73DFA9;
+	color: #D98270;
 	cursor: pointer;
 }
 
@@ -48,7 +48,7 @@ header{
 }
 
 .menuButton:hover{
-	color: #73DFA9;
+	color: #D98270;
 	cursor: pointer;
 }
 

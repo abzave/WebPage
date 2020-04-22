@@ -10,10 +10,10 @@
     display: inline-block;
     position: absolute;
     opacity: 0.5;
-    background-color: #AFEF8B;
+    background-color: #FCB767;
     border: none;
     font-size: 52px;
-    color: #59B0BD;
+    color: #574454;
     outline: 0;
     vertical-align: middle;
     overflow: hidden;
@@ -35,7 +35,7 @@
 }
 
 .imageInfo{
-    background-color: #AFEF8B7F;
+    background-color: #FCB7677F;
     bottom: 0;
     position: absolute;
     width: 100%;

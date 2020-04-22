@@ -14,16 +14,16 @@
 }
 
 .posts .searchBox{
-    background-color: #6F97AB;
+    background-color: #574454;
     padding: 1%;
     margin-bottom: 5%;
     min-height: 20px;   
 }
 
 .posts .searchBox input{
-    background-color: #59B0BD;
+    background-color: #262626;
     color: #F9F871;
-    border-color: #51C9BC;
+    border-color: #9A5F6E;
     border-style: solid;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -31,7 +31,7 @@
 }
 
 #categories .optionBox{
-    background-color: #6F97AB;
+    background-color: #262626;
 }
 
 .posts .searchBox input::placeholder{
@@ -81,8 +81,8 @@
 }
 
 .pages{
-    background-color: #AFEF8B;
-    color: #59B0BD;
+    background-color: #FCB767;
+    color: #574454;
     border: none;
     cursor: pointer;
     margin-right: 5px;

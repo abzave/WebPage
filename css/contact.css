@@ -1,5 +1,5 @@
 .contactForm .contact{
-    background-color: #59B0BD;
+    background-color: #574454;
     margin: 1% auto;
     width: 50%;
     padding: 0.5em;
@@ -15,9 +15,9 @@
 
 .contactForm .contact textarea, .contactForm .contact input{
     resize: none;
-    background-color: #59B0BD;
+    background-color: #574454;
     color: #F9F871;
-    border-color: #51C9BC;
+    border-color: #9A5F6E;
     border-style: solid;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -45,6 +45,6 @@
 }
 
 input:-internal-autofill-selected{
-    background-color: #59B0BD;
+    background-color: #574454;
     color: #F9F871;
 }

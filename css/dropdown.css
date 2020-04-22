@@ -11,9 +11,9 @@
 }
 
 .selectBox .optionBox{
-	background-color: #59B0BD;
+	background-color: #574454;
 	color: #F9F871;
-	border: 1px solid #6F97AB;
+	border: 1px solid #262626;
 	border-bottom: 0px;
 	border-radius: 2px;
 	opacity: 0;
@@ -28,7 +28,7 @@
 }
 
 .selectBox .option{
-	border-bottom: 1px solid #6F97AB;
+	border-bottom: 1px solid #262626;
 }
 
 .selectBox .option, .selected{
@@ -36,7 +36,7 @@
 }
 
 .selectBox .option:hover{
-	color: #73DFA9;
+	color: #D98270;
 }
 
 .selectBox .option .radio{
@@ -61,22 +61,22 @@
 }
 
 .selected:hover{
-	color: #73DFA9;
+	color: #D98270;
 }
 
 .optionBox select{
-	background-color: #6F97AB;
+	background-color: #262626;
 	width: 100%;
 	overflow: auto; 
 }
 
 .optionBox select option{
-	background-color: #6F97AB;
+	background-color: #262626;
 	color: #F9F871;
 	cursor: pointer;
 }
 
 .optionBox select option:hover, .optionBox select option:checked{
-	background-color: #59B0BD !important;
-	color: #AFEF8B !important;
+	background-color: #574454 !important;
+	color: #FCB767 !important;
 }
