@@ -29,10 +29,10 @@ function insertProjects(){
                 categories[currentCategory] = 0;
             }
         }
-        categories[currentCategory]++;
         if(!(categories[currentCategory] % ROW_LENGHT)){
             showcase = createShowcase(showcase);
         }
+        categories[currentCategory]++;
         showcase.append(createProjectCard(value));
     });
     verifyAligment(categories);
