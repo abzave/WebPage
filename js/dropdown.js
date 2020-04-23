@@ -14,10 +14,6 @@ class Dropdown extends HTMLElement{
         $(this).find(".selected").click(() => {
             $(this).find(".optionBox").toggleClass("active").slideToggle(400);
         });
-        $(this).find(".option").click(function(){
-            $(this).find(".selected").text($(this).find("label").html());
-            $(this).find(".optionBox").removeClass("active").slideUp(400);
-        });
     }
 
     attributeChangedCallback(attribute, oldValue, newValue){

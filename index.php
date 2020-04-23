@@ -37,32 +37,26 @@
 		</div>
 		<div class="presentation">
 			<h2 class="title">Abraham Meza Vega</h2>
-			<h3 class="subtitle">Ingeniero en Computación</h3>
+			<h3 class="subtitle translate" id="career"></h3>
 			<div class="contents">
 				<div class="information">
 					<div class="content">
-						<h4 class="contentTitle">Tecnologías</h4>
-						<p>
-							Páginas web, aplicaciones Android, realidad virtual, accessibilidad, 
-							desarrollo de videojuegos, voz a texto, simulaciones, aplicaciones 
-							desktop y desarrollo a bajo nivel en x86.
+						<h4 class="contentTitle translate" id="technologies"></h4>
+						<p class="translate" id="allTechnologies">
 						</p>
 					</div>
 					<div class="content">
-						<h4 class="contentTitle">Lenguajes de Programación</h4>
-						<p>
-							JavaScript, PHP, Python, Java, C#, C++, 
-							C y ensamblador x86.
+						<h4 class="contentTitle translate" id="programmingLanguages"></h4>
+						<p class="translate" id="allLanguages">
 						</p>
 					</div>
 					<div class="content">
-						<h4 class="contentTitle">Frameworks, Bibliotecas y APIs</h4>
-						<p>
-							Flask, QT, Unity, JQuery, wxPython, TKinter, JFreeChart, PdfBox y OpenGL.
+						<h4 class="contentTitle translate" id="frameworks"></h4>
+						<p class="translate" id="allFrameworks">
 						</p>
 					</div>
 				</div>
-				<a href="html/about.html" class="learnMore link">Más</a>
+				<a href="html/about.html" class="learnMore link translate" id="more"></a>
 			</div>
 		</div>
 		<div class="projects">

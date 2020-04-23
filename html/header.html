@@ -1,14 +1,15 @@
 <script src="/js/dropdown.js"></script>
 <script src="/js/dropdownOption.js"></script>
+<script src="/js/translate.js"></script>
 
 <a href="/index.php" id="pageLink">abzave.com</a>
 <div class="menu">
-    <a href="/index.php" id="home">Inicio</a>
-    <button class="menuButton" onclick="goToPage('/html/projects.php')">Proyectos</button>
-    <button class="menuButton" onclick="goToPage('/html/blog.php')">Blog</button>
-    <button class="menuButton" onclick="goToPage('/html/about.html')">Acerca de</button>
-    <button class="menuButton" onclick="goToPage('/html/contact.html')">Contacto</button>
-    <custom-dropdown default="ES">
+    <a href="/index.php" class="translate" id="home"></a>
+    <button class="menuButton translate" id="projects" onclick="goToPage('/html/projects.php')"></button>
+    <button class="menuButton translate" id="blog" onclick="goToPage('/html/blog.php')"></button>
+    <button class="menuButton translate" id="about" onclick="goToPage('/html/about.html')"></button>
+    <button class="menuButton translate" id="contact" onclick="goToPage('/html/contact.html')"></button>
+    <custom-dropdown>
         <dropdown-option name="language">ES</dropdown-option>
         <dropdown-option name="language">EN</dropdown-option>
     </custom-dropdown>

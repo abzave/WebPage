@@ -1,0 +1,54 @@
+{
+    "home": {
+        "ES": "Inicio",
+        "EN": "Home"
+    },
+    "projects": {
+        "ES": "Proyectos",
+        "EN": "Projects"
+    },
+    "blog": {
+        "ES": "Blog",
+        "EN": "Blog"
+    },
+    "about": {
+        "ES": "Acerca de",
+        "EN": "About"
+    },
+    "contact": {
+        "ES": "Contacto",
+        "EN": "Contact"
+    },
+    "career": {
+        "ES": "Ingeniero en Computación",
+        "EN": "Computer Science Engineer"
+    },
+    "technologies": {
+        "ES": "Tecnologías",
+        "EN": "Technologies"
+    },
+    "allTechnologies": {
+        "ES": "Páginas web, aplicaciones Android, realidad virtual, accessibilidad, desarrollo de videojuegos, voz a texto, simulaciones, aplicaciones desktop y desarrollo a bajo nivel en x86.",
+        "EN": "Web sites, Android aplications, virtual reality, accessibility, videogame development, speech to text, simulations, desktop aplications and low level x86 development"
+    },
+    "programmingLanguages": {
+        "ES": "Lenguajes de Programación",
+        "EN": "Programming languages"
+    },
+    "allLanguages": {
+        "ES": "JavaScript, PHP, Python, Java, C#, C++, C y ensamblador x86.",
+        "EN": "JavaScript, PHP, Python, Java, C#, C++, C and assembly x86."
+    },
+    "frameworks":{
+        "ES": "Frameworks, Bibliotecas y APIs",
+        "EN": "Frameworks, Libraries and APIs"
+    },
+    "allFrameworks":{
+        "ES": "Flask, QT, Unity, JQuery, wxPython, TKinter, JFreeChart, PdfBox y OpenGL.",
+        "EN": "Flask, QT, Unity, JQuery, wxPython, TKinter, JFreeChart, PdfBox and OpenGL."
+    },
+    "more":{
+        "ES": "Más",
+        "EN": "More"
+    }
+}
