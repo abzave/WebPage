@@ -30,7 +30,7 @@
             <div class="posts">
                 <div class="searchBoxes">
                     <form class="searchBox" method="GET" action="">
-                        <input type="search" placeholder="Buscar" name="search">
+                        <input type="search" placeholder="Buscar" name="search" autocomplete="off">
                         <input type="submit" value="Buscar">
                     </form>    
                     <form class="searchBox" method="GET" action="">
