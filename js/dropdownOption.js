@@ -10,15 +10,21 @@ class DropdownOption extends HTMLElement{
     }
 
     setClick() {
-        const urlParameters = new URLSearchParams(window.location.search);
         $(this).click(function(){
             $(this).parent().parent().parent().find(".selected").text($(this).find("label").text());
             $(this).parent().removeClass("active").slideUp(400);
-            if (!urlParameters.has("language")){
-                urlParameters.remove("language");
-            }
-            urlParameters.append("language", $(this).find("label").text());
+            this.addParamToURL();
         });
+    }
+
+    addParamToURL(){
+        const url = new URL(window.location.href);
+        const urlParameters = new URLSearchParams(url.search);
+        if (urlParameters.has(this.name)){
+            urlParameters.delete(this.name);
+        }
+        urlParameters.append(this.name, $(this).find("label").text());
+        window.location.href = url.pathname + "?" + urlParameters.toString();
     }
 
     attributeChangedCallback(attribute, oldValue, newValue){

@@ -50,5 +50,29 @@
     "more":{
         "ES": "Más",
         "EN": "More"
+    },
+    "moreProjects":{
+        "ES": "Más Projectos",
+        "EN": "More Projects"
+    },
+    "name":{
+        "ES": "Nombre",
+        "EN": "Name"
+    },
+    "lastname":{
+        "ES": "Apellido",
+        "EN": "Lastname"
+    },
+    "emailField": {
+        "ES": "Correo",
+        "EN": "Email"
+    },
+    "message": {
+        "ES": "Mensaje",
+        "EN": "Message"
+    },
+    "sendButton":{
+        "ES": "Enviar",
+        "EN": "Send"
     }
 }
