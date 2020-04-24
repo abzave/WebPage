@@ -15,10 +15,9 @@ class DropdownOption extends HTMLElement{
             $(this).parent().parent().parent().find(".selected").text($(this).find("label").text());
             $(this).parent().removeClass("active").slideUp(400);
             if (!urlParameters.has("language")){
-                window.location.href += "?language=" + $(this).find("label").text();
-            }else{
-                window.location.href = window.location.href.substring(0, window.location.href.length - 2) + $(this).find("label").text();
+                urlParameters.remove("language");
             }
+            urlParameters.append("language", $(this).find("label").text());
         });
     }
 

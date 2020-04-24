@@ -63,37 +63,37 @@
 			<?php
 				echo "<script>var projects = $projects</script>\n";
 			?>
-			<h2 class="title">Projectos</h2>
+			<h2 class="title translate" id="projects"></h2>
 			<div class="projectsShowcase" id="selectedProjects">
 				<div class="project" id="moreProjectsContainer">
-					<a href="html/projects.php" class="link" id="moreProjects">Más Projectos</a>
+					<a href="html/projects.php" class="link translate" id="moreProjects"></a>
 				</div>
 			</div>
 		</div>
 		<form class="contactForm" name="contact" method="POST" action="/php/Mail/SendMail.php">
-			<h2 class="title">Contacto</h2>
+			<h2 class="title translate" id="contact">Contacto</h2>
 			<table class="contact">
 				<tr>
 					<td>
-						<input type="text" placeholder="Nombre" name="name" autocomplete="off" required>
+						<input type="text" class="translatePlaceholder" id="name" name="name" autocomplete="off" required>
 					</td>
 					<td>
-						<input type="text" placeholder="Apellido" name="lastname" autocomplete="off" required>
+						<input type="text" class="translatePlaceholder" id="lastname" name="lastname" autocomplete="off" required>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input id="emailField" type="email" placeholder="Correo" name="email" autocomplete="off" required>
+						<input id="emailField" type="email" class="translatePlaceholder" name="email" autocomplete="off" required>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<textarea placeholder="Mensaje" name="message" required></textarea>
+						<textarea class="translatePlaceholder" id="message" name="message" required></textarea>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<input type="submit" value="Enviar" id="sendButton">
+						<input type="submit" class="translateValue" id="sendButton">
 					</td>
 				</tr>
 			</table>

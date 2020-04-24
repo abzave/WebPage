@@ -5,5 +5,11 @@ $(document).ready(function(){
         $(".translate").each(function(){
             $(this).html(json[$(this).attr("id")][language]);
         });
+        $(".translatePlaceholder").each(function(){
+            $(this).attr("placeholder", json[$(this).attr("id")][language]);
+        });
+        $(".translateValue").each(function(){
+            $(this).attr("value", json[$(this).attr("id")][language]);
+        });
     });
 });
