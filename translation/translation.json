@@ -74,5 +74,21 @@
     "sendButton":{
         "ES": "Enviar",
         "EN": "Send"
+    },
+    "personal": {
+        "ES": "Projectos Personales",
+        "EN": "Personal Projects"
+    },
+    "colaborative": {
+        "ES": "Projectos Colaborativos",
+        "EN": "Colaborative Projects"
+    },
+    "work": {
+        "ES": "Projectos Laborales",
+        "EN": "Work Projects"
+    },
+    "university": {
+        "ES": "Projectos de la Universidad",
+        "EN": "University Projects"
     }
 }
