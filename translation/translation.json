@@ -90,5 +90,29 @@
     "university": {
         "ES": "Projectos de la Universidad",
         "EN": "University Projects"
+    },
+    "blogPosts": {
+        "ES": "Posts del Blog",
+        "EN": "Blog Posts"
+    },
+    "search": {
+        "ES": "Buscar",
+        "EN": "Search"
+    },
+    "category": {
+        "ES": "Categorías",
+        "EN": "Categories"
+    },
+    "tag": {
+        "ES": "Etiquetas",
+        "EN": "Tags"
+    },
+    "apply": {
+        "ES": "Aplicar",
+        "EN": "Apply"
+    },
+    "clear": {
+        "ES": "Limpiar",
+        "EN": "Clear"
     }
 }

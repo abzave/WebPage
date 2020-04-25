@@ -4,9 +4,13 @@ class Dropdown extends HTMLElement{
         const options = $(this).html();
         $(this).load("/html/dropdown.html", function(){
             this.setDelegate();
-            $(this).find(".selected").text(this.default);
+            this.setDefault();
             $(this).find(".optionBox").append(options);
         });
+    }
+
+    setDefault(){
+        $(this).find(".selected").text(this.default);
     }
     
     setDelegate(){
@@ -33,8 +37,6 @@ class Dropdown extends HTMLElement{
     createAttribute(attribute, value) {
         if(value){
             this.setAttribute(attribute, value);
-        }else{
-            this.removeAttribute(attribute);
         }
     }
 
