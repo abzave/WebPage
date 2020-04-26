@@ -4,19 +4,19 @@ class Dropdown extends HTMLElement{
         const options = $(this).html();
         $(this).load("/html/dropdown.html", function(){
             this.setDelegate();
-            $(this).find(".selected").text(this.default);
+            this.setDefault();
             $(this).find(".optionBox").append(options);
         });
+    }
+
+    setDefault(){
+        $(this).find(".selected").text(this.default);
     }
     
     setDelegate(){
         $(this).find(".optionBox").hide().css("opacity", "1");
         $(this).find(".selected").click(() => {
             $(this).find(".optionBox").toggleClass("active").slideToggle(400);
-        });
-        $(this).find(".option").click(function(){
-            $(this).find(".selected").text($(this).find("label").html());
-            $(this).find(".optionBox").removeClass("active").slideUp(400);
         });
     }
 
@@ -37,8 +37,6 @@ class Dropdown extends HTMLElement{
     createAttribute(attribute, value) {
         if(value){
             this.setAttribute(attribute, value);
-        }else{
-            this.removeAttribute(attribute);
         }
     }
 

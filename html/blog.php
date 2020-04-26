@@ -26,29 +26,29 @@
     <body>
         <header></header>
         <div class="pageContent">
-            <h1 class="title">Posts del Blog</h1>
+            <h1 class="title translate" id="blogPosts"></h1>
             <div class="posts">
                 <div class="searchBoxes">
                     <form class="searchBox" method="GET" action="">
-                        <input type="search" placeholder="Buscar" name="search" autocomplete="off">
-                        <input type="submit" value="Buscar">
+                        <input type="search" class="translatePlaceholder" id="search" name="search" autocomplete="off">
+                        <input type="submit" class="translateValue" id="search">
                     </form>    
                     <form class="searchBox" method="GET" action="">
-                        <custom-dropdown default="Categorías">
+                        <custom-dropdown class="translateDefault" id="category">
                             <select id="categories" name="category[]" multiple>
                             </select>
                         </custom-dropdown>
-                        <input type="submit" value="Aplicar" class="apply">
+                        <input type="submit" class="apply translateValue" id="apply">
                     </form>
                     <form class="searchBox" method="GET" action="">
-                        <custom-dropdown default="Etiquetas">
+                        <custom-dropdown class="translateDefault" id="tag">
                             <select id="tags" name="tag[]" multiple>
                             </select>
                         </custom-dropdown>
-                        <input type="submit" value="Aplicar" class="apply">
+                        <input type="submit" class="apply translateValue" id="apply">
                     </form>
                     <form class="searchBox" method="GET" action="">
-                        <input type="reset" value="Limpiar" class="apply" onClick="goToPage('/html/blog.php')">
+                        <input type="reset" class="apply translateValue" id="clear" onClick="goToPage('/html/blog.php')">
                     </form>
                 </div>
                 <div class="pageContainer" align="center">
