@@ -114,5 +114,45 @@
     "clear": {
         "ES": "Limpiar",
         "EN": "Clear"
-    }
+    },
+    "whoAmI": {
+        "ES": "¿Quién soy?",
+        "EN": "Who am I?"
+    },
+    "IAmAbraham": {
+        "ES": "Soy <b>Abraham Meza</b>, tengo 19 años y me dedico al <b>desarrollo desde 2016</b>, soy estudiante de <b>Ingeniería en Computación</b> en el Tecnológico de Costa Rica (TEC) desde el 2018.",
+        "EN": "I am <b>Abraham Meza</b>, I am 19 years old and I dedicate myself to <b>development since 2016</b>, I am student of <b>Computer Science Engineering</b> at Costa Rica Institute of Technology (TEC) since 2018."
+    },
+    "thisWebSite": {
+        "ES": "Esta página web tiene como objetivo ser un lugar para publicar proyectos y activadades que he realizado. Me dedico al desarrollo de software en general por lo que presento una gran <b>versatilidad en tecnologías</b>. A la vez presento ventajas para esto como poseer <b>aprendizaje rápido</b> y ser <b>autodidacta</b>.",
+        "EN": "This web site have the objective of be a place where publish projects and activities that I have done. I dedicate myself to the software development in general so that I present a great <b>versatility in technologies</b>. At once I present advantages for this like have the <b>fast learning hability</b> and be <b>autodidact</b>."
+    },
+    "currentlyIHave": {
+        "ES": "Actualmente tengo experiencia en tecnologías como lo son <b>páginas web</b>, <b>aplicaciones Android</b> (con proyectos como <a href=\"projectInformation.php?project=Finanzas\"><b>Finanzas</b></a>), <b>realidad virtual</b> (por <a href=\"projectInformation.php?project=Escape%20Room\"><b>Escape Room</b></a>), <b>accessibilidad</b> (con <a href=\"projectInformation.php?project=EULER\"><b>EULER</b></a>), <b>desarrollo de videojuegos</b> (en <a href=\"projectInformation.php?project=Rescue%20Hubble\"><b>Rescue Hubble</b></a>), <b>voz a texto</b> (con <a href=\"projectInformation.php?project=EULER\"><b>EULER</b></a>), <b>simulaciones</b> (por <a href=\"projectInformation.php?project=Simulador%20de%20Fisicas\"><b>Simulador de físicas</b></a>), <b>aplicaciones desktop</b> (como <a href=\"projectInformation.php?project=PokePad\"><b>PokePad</b></a>) y <b>desarrollo a bajo nivel en x86</b> (como <a href=\"projectInformation.php?project=Simulador%20de%20CPU\"><b>Simulador de CPU</b></a>).",
+        "EN": "Currently I have experience on technolgies like <b>Web sites</b>, <b>Android aplications</b> (with projects like <a href=\"projectInformation.php?project=Finanzas\"><b>Finances</b></a>), <b>virtual reality</b> (for <a href=\"projectInformation.php?project=Escape%20Room\"><b>Escape Room</b></a>), <b>accessibility</b> (with <a href=\"projectInformation.php?project=EULER\"><b>EULER</b></a>), <b>videogame development</b> (in <a href=\"projectInformation.php?project=Rescue%20Hubble\"><b>Rescue Hubble</b></a>), <b>speech to text</b> (with <a href=\"projectInformation.php?project=EULER\"><b>EULER</b></a>), <b>simulations</b> (for <a href=\"projectInformation.php?project=Simulador%20de%20Fisicas\"><b>physics simulator</b></a>), <b>desktop aplications</b> (like <a href=\"projectInformation.php?project=PokePad\"><b>PokePad</b></a>) and <b>low level x86 development</b> (with <a href=\"projectInformation.php?project=Simulador%20de%20CPU\"><b>CPU Simulator</b></a>)."
+    },
+    "whatILike": {
+        "ES": "¿Qué me gusta?",
+        "EN": "What I Like?"
+    },
+    "nowadays": {
+        "ES": "En la actualidad me encuentro interesado en tecnologías como lo son <b>intelengia  artifical</b>, <b>realida virtual, aumentada y mixta</b>, <b>internet de las cosas</b>, <b>automatización</b> y <b>simulación</b>. A pesar de esto todavía el área del internet de las cosas no la tocado aunque me gustaría tener la oportunidad de hacerlo en un futuro.",
+        "EN": "Nowadays I am interested on technologies like <b>artifical intelligence</b>, <b>virtual, augmented and mixed reality</b>, <b>intenet of things</b>, <b>automation</b> and <b>simulation</b>. In spite of this I have not tested the area of internet of things still but I would like have the oportunity of try it in the future."
+    },
+    "evenIf": {
+        "ES": "Aunque estas sean las tecnologías que me parencen interesantes del estado actual de la computación, eso no quita que me guste <b>programar en general</b> y <b>afrontar nuevos retos</b> teniendo que pensar en maneras ingeniosas de afrotar estos mismos y así tener la oportunidad de poner en práctica y/o <b>adquirir nuevos conocimientos</b>.",
+        "EN": "Even if this are the technologies that look interesting to me of the current state of the computer science, this do not remove that I like <b>programming in general</b> and <b>afront new challenges</b> having to think in new ingenious ways of abord these same and so have the oportunity of put in practice and/or <b>adquire new knowlegde</b>."
+    },
+    "ofTheTechnologies":{
+        "ES": "De las tecnologías mencionadas anteriormente, a pesar de parecerme interesante, todavía no he tendido expenriencia con el internet de las cosas pero espero tener la oportunidad de realizar algún proyecto de este tipo prontamente.",
+        "EN": "Of the technologies mencionated previously, in spite of seen interesting, still I have not the experience with the internet of things but I hope have the oportunity of make some project of this kind promptly."
+    },
+    "archivements": {
+        "ES": "Logros",
+        "EN": "Archivements"
+    },
+    "in2019": {
+        "ES": "En el año 2019 participé como coautor del <b>paper \"EULER - Mathematical editing by voice input for people with visual impairment\"</b>. Este fue enviado y <b>aceptado en la Conferencia Internacional sobre Tecnología y Educación Inclusivas</b> (CONTIE) 2019. Trabajo el cual fui a <b>exponer a San José del Cabo, Baja California Sur, México</b>.",
+        "EN": "In the year of 2019 I participated like coauthor of the <b>paper \"EULER - Mathematical editing by voice input for people with visual impairment\"</b>. This was sended and <b>acepted in the International Conference on Inclusive Technology and Education (CONTIE) 2019</b>. Work that I went to <b>expose at San José del Cabo, Baja California South, México</b>."
+    }   
 }
